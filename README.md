@@ -57,7 +57,7 @@ Clone this repository to your desired folder Enter the following commands in the
 
 ```sh
   git clone git@github.com:efmomoh/Portfolio-setup-and-mobile-first.git
-  cd Hello_Microverse
+  cd Portfolio-setup-and-mobile-first
 ```
 
 ### Install
@@ -98,6 +98,8 @@ To run the project,
 ## 🔭 Future Features <a name="future-features"></a>
 - Pop-up for the project
 - Add a chatbot using API
+- Add setup header
+- Add cards section
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
