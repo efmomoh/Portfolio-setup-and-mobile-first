@@ -20,7 +20,7 @@
 
 # 📖 Portfolio: setup and mobile first<a name="about-project"></a>
 
-- Portfolio: setup and mobile first is my first Microverse project. In this project, we use HTML and CSS by adding an index and style file, we also used linters to analyze our source code to flag programming errors, bugs, stylistic errors, and suspicious constructs.
+- Portfolio: setup and mobile-first is my first Microverse project. In this project, we use HTML and CSS by adding an index and style file, we also used linters to analyze our source code to flag programming errors, bugs, stylistic errors, and suspicious constructs.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -56,7 +56,7 @@
 Clone this repository to your desired folder Enter the following commands in the terminal:
 
 ```sh
-  git clone git@github.com:efmomoh/Hello_Microverse.git
+  git clone git@github.com:efmomoh/Portfolio-setup-and-mobile-first.git
   cd Hello_Microverse
 ```
 
@@ -103,7 +103,7 @@ To run the project,
 
 ## 🤝 contributing <a name="contributing"></a>
 
-You are welcome, and click <a href="https://github.com/efmomoh/Hello_Microverse/issues">here</a> for contribution, issues, and feature request 🙏
+You are welcome, and click <a href="https://github.com/efmomoh/Portfolio-setup-and-mobile-first/issues">here</a> for contribution, issues, and feature request 🙏
 
 ## ⭐️ Show your support <a name="support"></a>
 
@@ -121,6 +121,6 @@ I would like to thank my Microverse studying partners and my standup team for he
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/efmomoh/Hello_Microverse/blob/hello_world_feature/MIT.md) licensed.
+This project is [MIT](https://github.com/efmomoh/Portfolio-setup-and-mobile-first/blob/feature-1/MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
