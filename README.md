@@ -100,6 +100,7 @@ To run the project,
 - Add a chatbot using API
 - Add setup header
 - Add cards section
+- Adds about page section
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
