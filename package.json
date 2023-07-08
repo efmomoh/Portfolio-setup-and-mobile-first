@@ -17,7 +17,9 @@
     "url": "https://github.com/efmomoh/Portfolio-setup-and-mobile-first/issues"
   },
   "homepage": "https://github.com/efmomoh/Portfolio-setup-and-mobile-first#readme",
-  "dependencies": {},
+  "dependencies": {
+    "npm": "^9.8.0"
+  },
   "devDependencies": {
     "hint": "^7.1.10",
     "stylelint": "^13.13.1",
