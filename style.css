@@ -51,7 +51,7 @@ a {
 }
 
 .mobile-header-bg {
-  background-image: url('images/mobile-header-bg.png');
+  background-image: url('./images/mobile-header-bg.png');
   background-repeat: no-repeat;
   width: 95%;
   height: 40rem;
@@ -160,7 +160,7 @@ span {
 }
 
 .mobileimage1 {
-  background-image: url('/images/mobileImg1.jpg');
+  background-image: url('./images/mobileImg1.jpg');
   background-repeat: no-repeat;
   height: 13.75rem;
   width: 100%;
@@ -168,7 +168,7 @@ span {
 }
 
 .mobileimage2 {
-  background-image: url('/images/mobileImg2.jpg');
+  background-image: url('./images/mobileImg2.jpg');
   background-repeat: no-repeat;
   height: 13.75rem;
   width: 100%;
@@ -176,7 +176,7 @@ span {
 }
 
 .mobileimage3 {
-  background-image: url('/images/mobileImg3.jpg');
+  background-image: url('./images/mobileImg3.jpg');
   background-repeat: no-repeat;
   height: 13.75rem;
   width: 100%;
@@ -184,7 +184,7 @@ span {
 }
 
 .mobileimage4 {
-  background-image: url('/images/mobileImg4.jpg');
+  background-image: url('./images/mobileImg4.jpg');
   background-repeat: no-repeat;
   height: 13.75rem;
   width: 100%;
@@ -390,21 +390,21 @@ strong {
 }
 
 .html::before {
-  content: url("/images/html.jpg");
+  content: url("./images/html.jpg");
   margin-inline: 1.5rem;
   font-size: 0.1rem;
   margin-left: -0.2rem;
 }
 
 .css::before {
-  content: url("/images/css.png");
+  content: url("./images/css.png");
   margin-inline: 1.5rem;
   margin-left: -0.2rem;
   font-size: 0.1rem;
 }
 
 .js::before {
-  content: url("/images/js.jpg");
+  content: url("./images/js.jpg");
   margin-inline: 1.5rem;
   margin-left: -0.1rem;
   font-size: 0.1rem;
