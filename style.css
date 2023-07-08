@@ -139,8 +139,7 @@ span {
 }
 
 .cards {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   height: auto;
   gap: 2rem;
   margin-left: 1rem;
