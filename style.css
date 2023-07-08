@@ -31,7 +31,6 @@ body {
 }
 
 a {
-  margin-top: 1rem;
   text-decoration: none;
   color: #253858;
 }
@@ -157,6 +156,7 @@ span {
   background: #fff;
   height: auto;
   padding: 1rem;
+  width: 90%;
 }
 
 .mobileimage1 {
@@ -284,7 +284,7 @@ button:disabled {
   border-top-right-radius: 5rem;
   background-color: #fff;
   border: 0.5rem solid #fff;
-  width: 100%;
+  width: 90%;
   height: 60rem;
   margin-left: 0.5rem;
 }
