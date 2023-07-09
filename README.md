@@ -100,6 +100,7 @@ To run the project,
 - Add a chatbot using API
 - Add setup header
 - Add cards section
+- Adds about page section
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -123,6 +124,6 @@ I would like to thank my Microverse studying partners and my standup team for he
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/efmomoh/Portfolio-setup-and-mobile-first/blob/feature-1/MIT.md) licensed.
+This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

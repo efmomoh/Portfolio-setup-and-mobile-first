@@ -6,7 +6,7 @@ body {
   box-sizing: border-box;
   height: auto;
   width: 100%;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   background: #fff;
 }
 
@@ -30,6 +30,11 @@ body {
   color: #6070ff;
 }
 
+a {
+  text-decoration: none;
+  color: #253858;
+}
+
 .navbar a {
   color: #6070ff;
   text-decoration: none;
@@ -46,7 +51,7 @@ body {
 }
 
 .mobile-header-bg {
-  background-image: url('images/mobile-header-bg.png');
+  background-image: url('./images/mobile-header-bg.png');
   background-repeat: no-repeat;
   width: 95%;
   height: 40rem;
@@ -62,7 +67,36 @@ h1 {
   font-style: normal;
 }
 
-p {
+h2,
+h3,
+h4,
+h5 {
+  font-size: 2rem;
+  color: #172b4d;
+  width: 100%;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 2rem;
+}
+
+h5 {
+  margin-left: 1.6rem;
+  margin-top: 4rem;
+  margin-bottom: -0.1rem;
+}
+
+h6 {
+  font-size: 2.5rem;
+  color: #fff;
+  width: 100%;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1rem;
+  text-align: center;
+}
+
+p,
+.about-p {
   color: #344563;
   width: 80%;
   padding-left: 1.5rem;
@@ -71,7 +105,7 @@ p {
   font-size: 0.938rem;
   font-style: normal;
   font-weight: 700;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
 span {
@@ -82,7 +116,7 @@ span {
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
 .media-links {
@@ -101,4 +135,277 @@ span {
   font-size: 1.3rem;
   color: #505f79;
   width: 1.2rem;
+}
+
+.cards {
+  display: grid;
+  height: auto;
+  gap: 2rem;
+  margin-left: 1rem;
+  width: 90%;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  display: flex;
+  flex-direction: column;
+  border: 0.063rem solid #dfe1e6;
+  border-radius: 1rem;
+  background: #fff;
+  height: auto;
+  padding: 1rem;
+  width: 90%;
+}
+
+.mobileimage1 {
+  background-image: url('./images/mobileImg1.jpg');
+  background-repeat: no-repeat;
+  height: 13.75rem;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.mobileimage2 {
+  background-image: url('./images/mobileImg2.jpg');
+  background-repeat: no-repeat;
+  height: 13.75rem;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.mobileimage3 {
+  background-image: url('./images/mobileImg3.jpg');
+  background-repeat: no-repeat;
+  height: 13.75rem;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.mobileimage4 {
+  background-image: url('./images/mobileImg4.jpg');
+  background-repeat: no-repeat;
+  height: 13.75rem;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.mobile {
+  display: flex;
+  width: 100%;
+  gap: 1.5rem;
+  line-height: 0.5rem;
+  margin-top: -0.5rem;
+}
+
+.mobile li {
+  list-style: disc;
+  font-size: 0.813rem;
+  font-style: normal;
+  font-weight: 600;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  color: #7a869a;
+}
+
+.mobile .company {
+  list-style-type: none;
+  font-size: 0.813rem;
+  color: #344563;
+  font-style: normal;
+  font-weight: 600;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  margin-left: -2.25rem;
+}
+
+.mobile-paragraph {
+  color: #344563;
+  margin-left: -1.25rem;
+  line-height: 1.5rem;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  width: auto;
+}
+
+.teck {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: -0.5rem;
+}
+
+.teck-list {
+  display: flex;
+  gap: 1.5rem;
+  width: 100%;
+  list-style-type: none;
+  margin-left: -2rem;
+}
+
+.mobile-btn {
+  border: 0.1rem solid #ebebff;
+  border-radius: 0.5rem;
+  background-color: #e5e6ecec;
+  color: #6070ff;
+  height: 2rem;
+}
+
+.mobile-btn:hover {
+  color: #fff;
+  background-color: #6070ff;
+}
+
+.see-mobile-btn {
+  border: 0.1rem solid #ebebff;
+  border-radius: 0.5rem;
+  height: 3rem;
+  font-size: 1rem;
+  color: #6070ff;
+  margin-top: 0.25rem;
+  width: 45%;
+  background-color: #fff;
+}
+
+button:active {
+  background-color: #2230d2;
+}
+
+button:disabled {
+  color: #5e6c84;
+}
+
+.see-mobile-btn:hover {
+  color: #fff;
+  background-color: #6070ff;
+}
+
+.about {
+  border-top-right-radius: 5rem;
+  background-color: #fff;
+  border: 0.5rem solid #fff;
+  width: 90%;
+  height: 60rem;
+  margin-left: 0.5rem;
+}
+
+.resume-mobile-btn {
+  border: 0.1rem solid #ebebff;
+  background-color: #fff;
+  border-radius: 0.8rem;
+  height: 3.5rem;
+  font-size: 1.3rem;
+  color: #6070ff;
+  margin-top: 0.25rem;
+  margin-left: 1rem;
+  font-weight: 500;
+  font-style: normal;
+  width: 60%;
+}
+
+.resume-mobile-btn:hover {
+  color: #fff;
+  background-color: #6070ff;
+}
+
+.lang-area {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-left: -3rem;
+}
+
+.stacknav {
+  display: flex;
+  gap: 6rem;
+  margin-top: 1rem;
+  margin-left: 2.5rem;
+  list-style-type: none;
+}
+
+.frameworks {
+  display: flex;
+  gap: 5rem;
+  margin-top: 2rem;
+  border-bottom: 0.1rem solid #acb7c3;
+  width: 80%;
+  list-style-type: none;
+}
+
+strong {
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-style: normal;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  color: #000;
+  margin-left: -2.5rem;
+}
+
+.skills {
+  display: flex;
+  font-size: 1.25rem;
+  gap: 10rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-bottom: 0.1rem solid #acb7c3;
+  width: 80%;
+  list-style-type: none;
+}
+
+.fa-angle-down {
+  font-size: 1.3rem;
+  color: #505f79;
+  border: 0.1rem solid #acb7c3;
+  height: 1rem;
+  margin-top: 0.5rem;
+}
+
+.fa-angle-right {
+  font-size: 1.3rem;
+  color: #5e6c84;
+  height: 1rem;
+  margin-top: 0.5rem;
+}
+
+.stacks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  list-style-type: none;
+}
+
+.html,
+.css,
+.js {
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: normal;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  background-color: #f7f7f9;
+  border: 0.1rem solid #ebebff;
+  border-radius: 0.5rem;
+  width: 80%;
+}
+
+.html::before {
+  content: url("./images/html.jpg");
+  margin-inline: 1.5rem;
+  font-size: 0.1rem;
+  margin-left: -0.2rem;
+}
+
+.css::before {
+  content: url("./images/css.png");
+  margin-inline: 1.5rem;
+  margin-left: -0.2rem;
+  font-size: 0.1rem;
+}
+
+.js::before {
+  content: url("./images/js.jpg");
+  margin-inline: 1.5rem;
+  margin-left: -0.1rem;
+  font-size: 0.1rem;
 }

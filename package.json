@@ -1,14 +1,25 @@
 {
-  "name": "portfolio-1",
+  "name": "Portfolio-setup-and-mobile-first",
   "version": "1.0.0",
-  "description": "- [📖 About the Project](#about-project)\r   - [🛠 Built With](#built-with)\r     - [Tech Stack](#tech-stack)\r     - [Key Features](#key-features)\r - [💻 Getting Started](#getting-started)\r   - [Setup](#setup)\r   - [Prerequisites](#prerequisites)\r   - [Install](#install)\r   - [Usage](#usage)\r   - [Run tests](#run-tests)\r - [👥 Authors](#authors)\r - [🔭 Future Features](#future-features)\r - [🤝 Contributing](#contributing)\r - [⭐️ Show your support](#support)\r - [🙏 Acknowledgements](#acknowledgements)\r - [📝 License](#license)",
+  "description": "- [📖 About the Project](#about-project)   - [🛠 Built With](#built-with)     - [Tech Stack](#tech-stack)     - [Key Features](#key-features) - [💻 Getting Started](#getting-started)   - [Setup](#setup)   - [Prerequisites](#prerequisites)   - [Install](#install)   - [Usage](#usage)   - [Run tests](#run-tests) - [👥 Authors](#authors) - [🔭 Future Features](#future-features) - [🤝 Contributing](#contributing) - [⭐️ Show your support](#support) - [🙏 Acknowledgements](#acknowledgements) - [📝 License](#license)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/efmomoh/Portfolio-setup-and-mobile-first.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/efmomoh/Portfolio-setup-and-mobile-first/issues"
+  },
+  "homepage": "https://github.com/efmomoh/Portfolio-setup-and-mobile-first#readme",
+  "dependencies": {
+    "npm": "^9.8.0"
+  },
   "devDependencies": {
     "hint": "^7.1.10",
     "stylelint": "^13.13.1",
