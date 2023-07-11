@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   width: 100%;
   overflow: hidden;
-  position: fixed;
+  /* position: fixed; */
 }
 
 .navbar {
@@ -283,10 +283,9 @@ button:disabled {
 .about {
   border-top-right-radius: 5rem;
   background-color: #fff;
-  border: 0.5rem solid #fff;
+  border: 1rem solid #fff;
   width: 90%;
   height: 60rem;
-  margin-left: 0.5rem;
 }
 
 .resume-mobile-btn {
@@ -408,4 +407,84 @@ strong {
   margin-inline: 1.5rem;
   margin-left: -0.1rem;
   font-size: 0.1rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color:  #6070ff;
+    border-top-left-radius: 8rem;
+
+ }
+
+ .contact-bg-img {
+    background-image: url('/images/mobile-header-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+ }
+
+ textarea {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    margin-right: 1rem;
+    height: 3rem;
+    padding-left: 01rem;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    border: 0.1rem solid #ACB7C3;
+    border-radius: 0.5rem;
+    font-style: normal;
+    margin-left: 1rem;
+    margin-bottom: 0.8rem;
+    color: #7A869A;
+    margin-left: 2rem;
+
+ }
+
+ textarea {
+    height: 10rem;
+    padding-top: 1rem;
+  
+ }
+
+ .contact-mobile-btn {
+  border: 0.5rem solid #EBEBFF;
+  border-radius: 0.5rem;
+  height: 2rem;
+  font-size: 1rem;
+  color: #6070ff;
+  margin-top: 2.5rem;
+  width: 40%;
+  margin-left: 2rem;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.home-btn {
+  width: 30%;
+  margin-top: 2rem;
+  margin-left: 8rem;
+  margin-bottom: 1rem;
+  
+}
+
+.contact-p {
+  color: #ffffff;
+  width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: -3rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
 }
