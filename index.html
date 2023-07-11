@@ -143,17 +143,22 @@
         </ul>
     </section>
         <!-- contact me  -->
-        <section class="contact">
-            <div class="contact-bg-img">
-                <h6>Contact me</h6>
-                <p class="contact-p">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
-                I’d love to help with it!</p>
-                <input type="text" placeholder="Lorem Ipsum">
-                <input type="email" placeholder="loremipsum@gmail.com">
-                <textarea name="message" id="" cols="15" rows="10">Write tour message here...</textarea>
-            </div>
-            <button class="contact-mobile-btn" type="submit">Get in touch</button>
-            <img src="/images/home-btn.png" alt="" class="home-btn">
-        </section>
+    <section class="contact">
+        <div class="contact-bg-img">
+            <h6>Contact me</h6>
+            <p class="contact-p">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
+            I’d love to help with it!</p>
+            <form action="">
+                <label for="name">Name:</label>
+                <input type="name" id="name" name="user_name" placeholder="Lorem Ipsum" maxlength="30" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="user_name" placeholder="loremipsum@gmail.com" required>
+                <label for="msg">Message:</label>
+                <textarea name="user_name" id="msg" cols="15" rows="10" maxlength="500" required>Write your message here...</textarea>
+                <button class="contact-mobile-btn" type="submit">Get in touch</button>
+                <img src="/images/home-btn.png" alt="home-button" class="home-btn">
+            </form>
+        </div>
+    </section>
 </body>
 </html>
