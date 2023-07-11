@@ -479,6 +479,10 @@ textarea {
 }
 
 .contact-mobile-btn:active {
+  color: #6070ff;
+}
+
+.contact-mobile-btn:disabled {
   color: #fff;
 }
 
