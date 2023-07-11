@@ -39,6 +39,7 @@
 - Set up the linter for the project 👌
 - Add the test file and node modules to the .gitignore file🚀
 - Add the styling
+- Add label forms
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -88,10 +89,13 @@ To run the project,
 
 👤 **Enssah**
 
-
 - GitHub: [@githubhandle](https://github.com/efmomoh)
 - Twitter: [@twitterhandle](https://twitter.com/@efmomoh)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/efmomoh?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BQI%2F5GWZxS063VqRg2rilyg%3D%3D)
+
+👤 **Srilearns**
+
+- GitHub: [@githubhandle](https://github.com/Srilearns)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,7 +104,8 @@ To run the project,
 - Add a chatbot using API
 - Add setup header
 - Add cards section
-- Adds about page section
+- Adds About page section
+- Contact form
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

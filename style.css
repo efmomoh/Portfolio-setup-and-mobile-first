@@ -280,13 +280,16 @@ button:disabled {
   background-color: #6070ff;
 }
 
+.see-mobile-btn:disabled {
+  color: #fff;
+}
+
 .about {
   border-top-right-radius: 5rem;
   background-color: #fff;
-  border: 0.5rem solid #fff;
+  border: 1rem solid #fff;
   width: 90%;
   height: 60rem;
-  margin-left: 0.5rem;
 }
 
 .resume-mobile-btn {
@@ -306,6 +309,11 @@ button:disabled {
 .resume-mobile-btn:hover {
   color: #fff;
   background-color: #6070ff;
+}
+
+.resume-mobile-btn:disabled {
+  color: #fff;
+  background: color #6070ff;
 }
 
 .lang-area {
@@ -408,4 +416,104 @@ strong {
   margin-inline: 1.5rem;
   margin-left: -0.1rem;
   font-size: 0.1rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #6070ff;
+  border-top-left-radius: 8rem;
+}
+
+.contact-bg-img {
+  background-image: url('/images/mobile-header-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+input,
+textarea {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  margin-right: 1rem;
+  height: 3rem;
+  padding-left: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  border: 0.1rem solid #acb7c3;
+  border-radius: 0.5rem;
+  font-style: normal;
+  margin-bottom: 0.8rem;
+  color: #7a869a;
+  margin-left: 2rem;
+}
+
+textarea {
+  height: 10rem;
+  padding-top: 1rem;
+}
+
+.contact-mobile-btn {
+  border: 0.01rem solid #ebebff;
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  color: #6070ff;
+  margin-top: 1rem;
+  width: 28%;
+  margin-left: 2rem;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.contact-mobile-btn:hover {
+  color: #fff;
+  background-color: #6070ff;
+}
+
+.contact-mobile-btn:active {
+  color: #6070ff;
+}
+
+.contact-mobile-btn:disabled {
+  color: #fff;
+}
+
+.home-btn {
+  background-image: url('./images/home-btn.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25%;
+  margin-top: 1.5rem;
+  margin-left: 8rem;
+  margin-bottom: 1rem;
+  height: 0.4rem;
+}
+
+.contact-p {
+  color: #fff;
+  width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: -3rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+label {
+  display: none;
+  padding-left: 2rem;
+  font-size: 0.9rem;
+  color: #ff000f;
 }

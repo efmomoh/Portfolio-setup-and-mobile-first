@@ -1,5 +1,5 @@
 {
-  "name": "Portfolio-setup-and-mobile-first",
+  "name": "portfolio-setup-and-mobile-first",
   "version": "1.0.0",
   "description": "- [📖 About the Project](#about-project)   - [🛠 Built With](#built-with)     - [Tech Stack](#tech-stack)     - [Key Features](#key-features) - [💻 Getting Started](#getting-started)   - [Setup](#setup)   - [Prerequisites](#prerequisites)   - [Install](#install)   - [Usage](#usage)   - [Run tests](#run-tests) - [👥 Authors](#authors) - [🔭 Future Features](#future-features) - [🤝 Contributing](#contributing) - [⭐️ Show your support](#support) - [🙏 Acknowledgements](#acknowledgements) - [📝 License](#license)",
   "main": "index.js",
@@ -21,7 +21,7 @@
     "npm": "^9.8.0"
   },
   "devDependencies": {
-    "hint": "^7.1.10",
+    "hint": "^2.0.0",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
