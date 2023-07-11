@@ -426,7 +426,7 @@ strong {
     height: auto;
  }
 
- textarea {
+ input, textarea {
     display: flex;
     flex-direction: column;
     width: 80%;
