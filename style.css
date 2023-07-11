@@ -280,6 +280,10 @@ button:disabled {
   background-color: #6070ff;
 }
 
+.see-mobile-btn:disabled {
+  color: #fff;
+}
+
 .about {
   border-top-right-radius: 5rem;
   background-color: #fff;
@@ -305,6 +309,11 @@ button:disabled {
 .resume-mobile-btn:hover {
   color: #fff;
   background-color: #6070ff;
+}
+
+.resume-mobile-btn:disabled {
+  color: #fff;
+  background: color #6070ff;
 }
 
 .lang-area {
@@ -452,13 +461,13 @@ textarea {
 }
 
 .contact-mobile-btn {
-  border: 0.1rem solid #ebebff;
+  border: 0.01rem solid #ebebff;
   border-radius: 0.5rem;
   height: 2.5rem;
   font-size: 1rem;
   color: #6070ff;
   margin-top: 1rem;
-  width: 35%;
+  width: 28%;
   margin-left: 2rem;
   font-weight: 500;
   font-style: normal;
@@ -467,6 +476,10 @@ textarea {
 .contact-mobile-btn:hover {
   color: #fff;
   background-color: #6070ff;
+}
+
+.contact-mobile-btn:active {
+  color: #fff;
 }
 
 .home-btn {
