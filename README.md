@@ -40,6 +40,7 @@
 - Add the test file and node modules to the .gitignore file🚀
 - Add the styling
 - Add label forms
+- Desktop layout
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -48,7 +49,8 @@
 ### Prerequisites
 
 
-1. Web Browser
+1. Computer
+2. Web Browser
 2. Git
 3. Code Editor
 
@@ -106,6 +108,7 @@ To run the project,
 - Add cards section
 - Adds About page section
 - Contact form
+- Desktop version
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
