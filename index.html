@@ -10,14 +10,20 @@
 </head>
 <body>
     <header class="header">
-        <nav class="navbar">
+        <nav class="navbar" >
             <a href="#">My Logo</a>
             <i class="fa-solid fa-bars"></i>
+            <ul class="menu">
+                <li class="list"><a href="">Portfolio</a></li>
+                <li class="list"><a href="">About</a></li>
+                <li class="list"><a href="">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <section class="main">
-        <div class="mobile-header-bg">
+        <div class="mobile-header-bg" id="deskHeaderBg">
             <h1>I'm Enssah. <br> Glad to see <br> you!</h1>
+            <h1 class="deskH1">I'm Enssah. <br> Glad to see you!</h1>
             <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
             <span>LET'S CONNECT</span>
             <ul class="media-links">
@@ -31,15 +37,18 @@
     </section>
     <section class="cards">
         <!-- card1  -->
-        <section class="card1">
-            <div class="mobileimage1"></div>
+    <section class="card1">
+        <div class="mobileimage1"></div>
+        <div class="deskImg1"></div>
+        <div class="grid-column">
             <h2>Tonic</h2>
             <ul class="mobile">
                 <li class="company">CANOPY</li>
                 <li>Back End Dev</li>
                 <li>2013</li>
             </ul>
-            <p class="mobile-paragraph">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+            <p class="mobileP">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+            <p class="deskP">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
             <div class="teck">
                 <ul class="teck-list">
                     <li><button class="mobile-btn" type="submit">HTML</button></li>
@@ -48,78 +57,127 @@
                 </ul>
             </div>
             <button class="see-mobile-btn" type="submit">See Projects</button>
+        </div>
         </section>
         <!-- card2  -->
         <section class="card2">
             <div class="mobileimage2"></div>
-            <h3>Multi-Post <br> Stories</h3>
-            <ul class="mobile">
-                <li class="company">CANOPY</li>
-                <li>Back End Dev</li>
-                <li>2013</li>
-            </ul>
-            <p class="mobile-paragraph">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-            <div class="teck">
-                <ul class="teck-list">
-                    <li><button class="mobile-btn" type="submit">HTML</button></li>
-                    <li><button class="mobile-btn" type="submit">CSS</button></li>
-                    <li><button class="mobile-btn" type="submit">JavaScript</button></li>
+            <div class="deskImg2"></div>
+            <div class="grid-column">
+                <h3>Multi-Post <br> Stories</h3>
+                <h3 class="deskTitle1">Multi-Post Stories</h3>
+                <ul class="mobile">
+                    <li class="company" id="deskHideCanopy" >CANOPY</li>
+                    <li class="deskCompany2">FACEBOOK</li>
+                    <li id="deskHideJob">Back End Dev</li>
+                    <li class="mobileHideJob">Full Stack Dev</li>
+                    <li>2013</li>
                 </ul>
+                <p class="mobileP">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                <p class="deskP">Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.</p>
+                <div class="mobileTeck">
+                    <ul class="teck-list">
+                        <li><button class="mobile-btn" type="submit">HTML</button></li>
+                        <li><button class="mobile-btn" type="submit">CSS</button></li>
+                        <li><button class="mobile-btn" type="submit">JavaScript</button></li>
+                    </ul>
+                </div>
+                <div class="deskTeck">
+                    <ul class="deskTeck-list">
+                        <li><button class="desk-btn" type="submit">HTML</button></li>
+                        <li><button class="desk-btn" type="submit">Ruby on Rails</button></li>
+                        <li><button class="desk-btn" type="submit">CSS</button></li>
+                        <li><button class="desk-btn" type="submit">JavaScript</button></li>
+                    </ul>
+                </div>
+                <button class="see-mobile-btn" type="submit">See Projects</button>
             </div>
-            <button class="see-mobile-btn" type="submit">See Projects</button>
         </section>
         <!-- card 3 -->
         <section class="card3">
             <div class="mobileimage3"></div>
-            <h4>Tonic</h4>
-            <ul class="mobile">
-                <li class="company">CANOPY</li>
-                <li>Back End Dev</li>
-                <li>2013</li>
-            </ul>
-            <p class="mobile-paragraph">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-            <div class="teck">
-                <ul class="teck-list">
-                    <li><button class="mobile-btn" type="submit">HTML</button></li>
-                    <li><button class="mobile-btn" type="submit">CSS</button></li>
-                    <li><button class="mobile-btn" type="submit">JavaScript</button></li>
+            <div class="deskImg3"></div>
+            <div class="grid-colum">
+                <h4>Tonic</h4>
+                <h4 class="deskTitle1">Facebook 360</h4>
+                <ul class="mobile">
+                    <li class="company" id="deskHideCanopy">CANOPY</li>
+                    <li class="deskCompany2">FACEBOOK</li>
+                    <li id="deskHideJob">Back End Dev</li>
+                    <li class="mobileHideJob">Full Stack Dev</li>
+                    <li>2013</li>
                 </ul>
+                <p class="mobileP">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                <p class="deskP">Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.</p>
+                <div class="mobileTeck">
+                    <ul class="teck-list">
+                        <li><button class="mobile-btn" type="submit">HTML</button></li>
+                        <li><button class="mobile-btn" type="submit">CSS</button></li>
+                        <li><button class="mobile-btn" type="submit">JavaScript</button></li>
+                    </ul>
+                </div>
+                <div class="deskTeck">
+                    <ul class="deskTeck-list">
+                        <li><button class="desk-btn" type="submit">HTML</button></li>
+                        <li><button class="desk-btn" type="submit">Ruby on Rails</button></li>
+                        <li><button class="desk-btn" type="submit">CSS</button></li>
+                        <li><button class="desk-btn" type="submit">JavaScript</button></li>
+                    </ul>
+                </div>
+                <button class="see-mobile-btn" type="submit">See Projects</button>
             </div>
-            <button class="see-mobile-btn" type="submit">See Projects</button>
         </section>
         <!-- card4 -->
         <section class="card4">
             <div class="mobileimage4"></div>
-            <h3>Multi-Post <br> Stories</h3>
-            <ul class="mobile">
-                <li class="company">CANOPY</li>
-                <li>Back End Dev</li>
-                <li>2013</li>
-            </ul>
-            <p class="mobile-paragraph">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-            <div class="teck">
-                <ul class="teck-list">
-                    <li><button class="mobile-btn" type="submit">HTML</button></li>
-                    <li><button class="mobile-btn" type="submit">CSS</button></li>
-                    <li><button class="mobile-btn" type="submit">JavaScript</button></li>
+            <div class="deskImg4"></div>
+            <div class="grid-colum">
+                <h3>Multi-Post <br> Stories</h3>
+                <h3 class="deskTitle1">Uber Navigation</h3>
+                <ul class="mobile">
+                    <li class="company" id="deskHideCanopy">CANOPY</li>
+                    <li class="deskCompany2">Ulber</li>
+                    <li id="deskHideJob">Back End Dev</li>
+                    <li class="mobileHideJob">Lead Developer</li>
+                    <li id="deskHideYear">2013</li>
+                    <li class="mobileHideYear">2018</li>
                 </ul>
+                <p class="mobileP">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                <p class="deskP">A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.</p>
+                <div class="mobileTeck">
+                    <ul class="teck-list">
+                        <li><button class="mobile-btn" type="submit">HTML</button></li>
+                        <li><button class="mobile-btn" type="submit">CSS</button></li>
+                        <li><button class="mobile-btn" type="submit">JavaScript</button></li>
+                    </ul>
+                </div>
+                <div class="deskTeck">
+                    <ul class="teck-list">
+                        <li><button class="mobile-btn" type="submit">HTML</button></li>
+                        <li><button class="mobile-btn" type="submit">Ruby on Rails</button></li>
+                        <li><button class="mobile-btn" type="submit">CSS</button></li>
+                        <li><button class="mobile-btn" type="submit">JavaScript</button></li>
+                    </ul>
+                </div>
+                <button class="see-mobile-btn" type="submit">See Projects</button>
             </div>
-            <button class="see-mobile-btn" type="submit">See Projects</button>
         </section>
     </section>
     <!-- about area -->
     <section class="about">
-        <h5>About Myself</h5>
-        <p class="about-p">Hello I’m a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
-        <span>LET'S CONNECT</span>
-        <ul class="media-links">
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-m"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-angellist"></i></a></li> 
-        </ul>
-        <button class="resume-mobile-btn" type="submit">Get my resume</button>
+        <div class="about-grid-column">
+            <h5>About Myself</h5>
+            <p class="about-p">Hello I’m a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
+            <span class="connect">LET'S CONNECT</span>
+            <ul class="media-links" id="connect-media-links">
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-m"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-angellist"></i></a></li> 
+            </ul>
+            <button class="resume-mobile-btn" id="desk-resume-btn" type="submit">Get my resume</button>
+        </div>
         <ul class="lang-area">
             <ul class="stacknav">
                 <li><strong>Languages</strong></li>
@@ -144,22 +202,20 @@
     </section>
         <!-- contact me  -->
     <section class="contact">
-        <div class="contact-bg-img">
-            <h6>Contact me</h6>
-            <p class="contact-p">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
-            I’d love to help with it!</p>
-            <form action="https://formspree.io/f/xjvdador" method="post">
-                <label for="name">Name:</label>
-                <input type="name" id="name" name="user_name" placeholder="Lorem Ipsum" maxlength="30" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="user_name" placeholder="loremipsum@gmail.com" required>
-                <label for="msg">Message:</label>
-                <textarea name="user_name" id="msg" cols="15" rows="10" maxlength="500" required>Write your message here...</textarea>
-                <button class="contact-mobile-btn" type="submit">Get in touch</button>
-            </form>
-        </div>
-        <div class="home-btn">
-        </div>
+        <div class="contact-bg-img"></div>
+                <h6>Contact me</h6>
+                <p class="contact-p">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
+                I’d love to help with it!</p>
+                <form action="https://formspree.io/f/xjvdador" method="post">
+                    <label for="name">Name:</label>
+                    <input type="name" id="name" name="user_name" placeholder="Lorem Ipsum" maxlength="30" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="user_name" placeholder="loremipsum@gmail.com" required>
+                    <label for="msg">Message:</label>
+                    <textarea name="user_name" id="msg" cols="15" rows="10" maxlength="500" required>Write your message here...</textarea>
+                    <button class="contact-mobile-btn" type="submit">Get in touch</button>
+                </form>
+            <div class="home-btn"></div>
     </section>
 </body>
 </html>
