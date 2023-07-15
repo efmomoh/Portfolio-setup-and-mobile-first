@@ -787,7 +787,6 @@ label {
     display: flex;
     flex-direction: column;
     font-weight: normal;
-
   }
 
   h5 {
@@ -876,7 +875,6 @@ label {
     font-size: 1rem;
     font-style: normal;
     font-weight: normal;
-
   }
 
   .mobile .company,
@@ -910,10 +908,6 @@ label {
     font-weight: normal;
   }
 
-  .mobile .deskCompany2 {
-    list-style-type: none;
-  }
-
   .deskCompany2 {
     margin-left: -2rem;
     color: #091e42;
@@ -921,6 +915,10 @@ label {
     font-style: normal;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-weight: normal;
+  }
+
+  .mobile .deskCompany2 {
+    list-style-type: none;
   }
 
   #desk-resume-btn {
@@ -985,7 +983,6 @@ label {
     width: 80%;
     margin-left: 1.2rem;
     font-weight: normal;
-
   }
 
   .stacks a {
@@ -1000,14 +997,12 @@ label {
     margin-left: 1rem;
     font-size: 0.5rem;
     font-weight: normal;
-
   }
 
   .js::before {
     margin-left: 1rem;
     font-size: 0.5rem;
     font-weight: normal;
-
   }
 
   .html::before {
@@ -1121,6 +1116,7 @@ label {
     width: 87%;
     list-style-type: none;
   }
+
   .mobile .company {
     list-style-type: none;
     font-size: 1rem;
