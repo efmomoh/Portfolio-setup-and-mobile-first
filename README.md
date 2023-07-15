@@ -41,6 +41,7 @@
 - Add the styling
 - Add label forms
 - Desktop layout
+- Animation effect applied to desktop version
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -50,9 +51,10 @@
 
 
 1. Computer
-2. Web Browser
-2. Git
-3. Code Editor
+2. Internet
+3. Web Browser
+4. Git
+5. Code Editor
 
 ### Setup
 
@@ -109,6 +111,7 @@ To run the project,
 - Adds About page section
 - Contact form
 - Desktop version
+- Animation Effects
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
