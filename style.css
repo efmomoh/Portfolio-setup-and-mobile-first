@@ -8,6 +8,7 @@ body {
   width: 100%;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   background: #f7f7f9;
+  font-weight: normal;
 }
 
 .header {
@@ -66,8 +67,8 @@ h1 {
   width: 100%;
   padding-top: 8rem;
   padding-left: 1.5rem;
-  font-weight: 700;
   font-style: normal;
+  font-weight: normal;
 }
 
 h2,
@@ -77,7 +78,7 @@ h5 {
   font-size: 2rem;
   color: #172b4d;
   width: 100%;
-  font-weight: 700;
+  font-weight: normal;
   font-style: normal;
   line-height: 2rem;
 }
@@ -91,7 +92,7 @@ h6 {
   font-size: 2rem;
   color: #fff;
   width: 100%;
-  font-weight: 500;
+  font-weight: normal;
   font-style: normal;
   line-height: 1rem;
   text-align: center;
@@ -106,7 +107,8 @@ p {
   line-height: 1.5rem;
   font-size: 1rem;
   font-style: normal;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 .about-p {
@@ -117,8 +119,8 @@ p {
   line-height: 1.5rem;
   font-size: 0.938rem;
   font-style: normal;
-  font-weight: 700;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 span {
@@ -128,8 +130,8 @@ span {
   line-height: 1.5rem;
   font-size: 1rem;
   font-style: normal;
-  font-weight: 700;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 .media-links {
@@ -148,6 +150,7 @@ span {
   font-size: 1.3rem;
   color: #505f79;
   width: 1.2rem;
+  font-weight: normal;
 }
 
 .cards {
@@ -216,8 +219,8 @@ span {
   list-style: disc;
   font-size: 0.813rem;
   font-style: normal;
-  font-weight: 600;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   color: #7a869a;
 }
 
@@ -226,8 +229,8 @@ span {
   font-size: 0.813rem;
   color: #344563;
   font-style: normal;
-  font-weight: 600;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   margin-left: -2.25rem;
 }
 
@@ -237,7 +240,6 @@ span {
   line-height: 1.5rem;
   font-size: 0.8rem;
   font-style: normal;
-  font-weight: 400;
   width: auto;
 }
 
@@ -323,7 +325,6 @@ button:disabled {
   color: #6070ff;
   margin-top: 0.25rem;
   margin-left: 1rem;
-  font-weight: 500;
   font-style: normal;
   width: 50%;
 }
@@ -363,7 +364,6 @@ button:disabled {
 
 strong {
   font-size: 1.25rem;
-  font-weight: 500;
   font-style: normal;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   color: #344563;
@@ -416,7 +416,6 @@ strong {
 .js {
   display: flex;
   font-size: 1rem;
-  font-weight: 500;
   font-style: normal;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   background-color: #f7f7f9;
@@ -472,7 +471,6 @@ textarea {
   height: 3rem;
   padding-left: 0.5rem;
   font-size: 0.9rem;
-  font-weight: 500;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   background-color: #fff;
   border: 0.1rem solid #acb7c3;
@@ -497,7 +495,6 @@ textarea {
   margin-top: 1rem;
   width: 28%;
   margin-left: 2rem;
-  font-weight: 500;
   font-style: normal;
 }
 
@@ -534,9 +531,9 @@ textarea {
   margin-top: -3rem;
   margin-bottom: 1.5rem;
   line-height: 1.5rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
 }
 
 label {
@@ -633,6 +630,7 @@ label {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-size: 3rem;
     font-style: normal;
+    font-weight: normal;
     line-height: 3.75rem;
     letter-spacing: 0.023125rem;
   }
@@ -646,6 +644,7 @@ label {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-style: normal;
+    font-weight: normal;
     line-height: 1.75rem;
   }
 
@@ -655,8 +654,9 @@ label {
     width: 35%;
     color: #344563;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-style: normal;
+    font-weight: normal;
     line-height: 1.75rem;
   }
 
@@ -666,6 +666,7 @@ label {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-style: normal;
+    font-weight: normal;
     line-height: 2.5rem;
     padding-left: 10rem;
   }
@@ -676,6 +677,7 @@ label {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-style: normal;
+    font-weight: normal;
     line-height: 2.5rem;
     margin-left: -8.5rem;
   }
@@ -747,7 +749,7 @@ label {
     border-radius: 1rem;
     background: #fff;
     height: 26rem;
-    padding: 1rem;
+    padding-left: 1.5rem;
     width: 80%;
     margin-top: 4rem;
   }
@@ -784,6 +786,8 @@ label {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
+    font-weight: normal;
+
   }
 
   h5 {
@@ -792,6 +796,7 @@ label {
     width: 100%;
     height: auto;
     font-style: normal;
+    font-weight: normal;
     line-height: 2rem;
     margin-top: 2rem;
     display: flex;
@@ -804,6 +809,7 @@ label {
     width: 70%;
     height: auto;
     font-style: normal;
+    font-weight: normal;
     line-height: 2rem;
     margin-top: 1rem;
     display: flex;
@@ -869,6 +875,8 @@ label {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-style: normal;
+    font-weight: normal;
+
   }
 
   .mobile .company,
@@ -878,6 +886,7 @@ label {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     color: #344563;
     font-size: 1.2rem;
+    font-weight: normal;
   }
 
   .deskP {
@@ -886,6 +895,7 @@ label {
     line-height: 1.5rem;
     font-size: 0.95rem;
     font-style: normal;
+    font-weight: normal;
     width: 82%;
   }
 
@@ -897,15 +907,20 @@ label {
     width: 36%;
     text-align: center;
     margin-left: 18rem;
+    font-weight: normal;
   }
 
   .mobile .deskCompany2 {
     list-style-type: none;
+  }
+
+  .deskCompany2 {
     margin-left: -2rem;
     color: #091e42;
     font-size: 1rem;
     font-style: normal;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: normal;
   }
 
   #desk-resume-btn {
@@ -969,6 +984,8 @@ label {
     background-color: #f7f7f9;
     width: 80%;
     margin-left: 1.2rem;
+    font-weight: normal;
+
   }
 
   .stacks a {
@@ -982,16 +999,21 @@ label {
   .css::before {
     margin-left: 1rem;
     font-size: 0.5rem;
+    font-weight: normal;
+
   }
 
   .js::before {
     margin-left: 1rem;
     font-size: 0.5rem;
+    font-weight: normal;
+
   }
 
   .html::before {
     margin-left: 1rem;
     font-size: 0.5rem;
+    font-weight: normal;
   }
 
   .contactSection {
@@ -1021,6 +1043,7 @@ label {
     display: flex;
     flex-direction: column;
     padding-left: 1rem;
+    font-weight: normal;
   }
 
   input,
@@ -1036,6 +1059,7 @@ label {
     border: 0.1rem solid #acb7c3;
     border-radius: 0.5rem;
     font-style: normal;
+    font-weight: normal;
     margin-bottom: 0.8rem;
     color: #7a869a;
     margin-left: 30rem;
@@ -1075,6 +1099,7 @@ label {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     color: #344563;
     padding-left: 1rem;
+    font-weight: normal;
   }
 
   .frameworks {
@@ -1095,5 +1120,14 @@ label {
     border-bottom: 0.1rem solid #acb7c3;
     width: 87%;
     list-style-type: none;
+  }
+  .mobile .company {
+    list-style-type: none;
+    font-size: 1rem;
+    color: #344563;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    margin-left: -2.25rem;
   }
 }
