@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
 
 body {
   margin: 0;
@@ -6,13 +6,15 @@ body {
   box-sizing: border-box;
   height: auto;
   width: 100%;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
-  background: #fff;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  background: #f7f7f9;
+  font-weight: normal;
 }
 
 .header {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   overflow: hidden;
   position: fixed;
@@ -20,19 +22,19 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
   height: auto;
   padding: 0.8rem;
+  gap: 16rem;
 }
 
-.navbar i {
+.fa-bars {
   font-size: 1.5rem;
   color: #6070ff;
 }
 
-a {
-  text-decoration: none;
-  color: #253858;
+i {
+  font-size: 1.5rem;
+  color: #6070ff;
 }
 
 .navbar a {
@@ -46,15 +48,17 @@ a {
   width: 100%;
   padding-top: 2rem;
   height: auto;
-  border: 2px solid #fff;
-  border-bottom-left-radius: 4rem;
+  border: 1px solid #f7f7f9;
+  border-bottom-left-radius: 8rem;
 }
 
 .mobile-header-bg {
   background-image: url('./images/mobile-header-bg.png');
   background-repeat: no-repeat;
-  width: 95%;
+  width: 96.5%;
   height: 40rem;
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
@@ -63,8 +67,8 @@ h1 {
   width: 100%;
   padding-top: 8rem;
   padding-left: 1.5rem;
-  font-weight: 700;
   font-style: normal;
+  font-weight: normal;
 }
 
 h2,
@@ -74,28 +78,39 @@ h5 {
   font-size: 2rem;
   color: #172b4d;
   width: 100%;
-  font-weight: 700;
+  font-weight: normal;
   font-style: normal;
   line-height: 2rem;
 }
 
 h5 {
   margin-left: 1.6rem;
-  margin-top: 4rem;
   margin-bottom: -0.1rem;
 }
 
 h6 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #fff;
   width: 100%;
-  font-weight: 500;
+  font-weight: normal;
   font-style: normal;
   line-height: 1rem;
   text-align: center;
+  padding-top: 6rem;
 }
 
-p,
+p {
+  color: #344563;
+  width: 92%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
 .about-p {
   color: #344563;
   width: 80%;
@@ -104,8 +119,8 @@ p,
   line-height: 1.5rem;
   font-size: 0.938rem;
   font-style: normal;
-  font-weight: 700;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 span {
@@ -115,8 +130,8 @@ span {
   line-height: 1.5rem;
   font-size: 1rem;
   font-style: normal;
-  font-weight: 700;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 .media-links {
@@ -135,14 +150,15 @@ span {
   font-size: 1.3rem;
   color: #505f79;
   width: 1.2rem;
+  font-weight: normal;
 }
 
 .cards {
   display: grid;
   height: auto;
   gap: 2rem;
-  margin-left: 1rem;
-  width: 90%;
+  padding-left: 1.5rem;
+  width: 87%;
 }
 
 .card1,
@@ -203,8 +219,8 @@ span {
   list-style: disc;
   font-size: 0.813rem;
   font-style: normal;
-  font-weight: 600;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   color: #7a869a;
 }
 
@@ -213,29 +229,30 @@ span {
   font-size: 0.813rem;
   color: #344563;
   font-style: normal;
-  font-weight: 600;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   margin-left: -2.25rem;
 }
 
-.mobile-paragraph {
+.mobileP {
   color: #344563;
   margin-left: -1.25rem;
   line-height: 1.5rem;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-style: normal;
-  font-weight: 400;
   width: auto;
 }
 
-.teck {
+.teck,
+.deskTeck {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-left: -0.5rem;
 }
 
-.teck-list {
+.teck-list,
+.deskTeck-list {
   display: flex;
   gap: 1.5rem;
   width: 100%;
@@ -243,7 +260,8 @@ span {
   margin-left: -2rem;
 }
 
-.mobile-btn {
+.mobile-btn,
+.desk-btn {
   border: 0.1rem solid #ebebff;
   border-radius: 0.5rem;
   background-color: #e5e6ecec;
@@ -256,13 +274,18 @@ span {
   background-color: #6070ff;
 }
 
+.desk-btn:hover {
+  color: #fff;
+  background-color: #6070ff;
+}
+
 .see-mobile-btn {
   border: 0.1rem solid #ebebff;
   border-radius: 0.5rem;
   height: 3rem;
   font-size: 1rem;
   color: #6070ff;
-  margin-top: 0.25rem;
+  margin-top: 1rem;
   width: 45%;
   background-color: #fff;
 }
@@ -285,11 +308,12 @@ button:disabled {
 }
 
 .about {
-  border-top-right-radius: 5rem;
-  background-color: #fff;
+  border-top-right-radius: 8rem;
+  background: #fff;
   border: 1rem solid #fff;
-  width: 90%;
+  width: 100%;
   height: 60rem;
+  margin-top: 3rem;
 }
 
 .resume-mobile-btn {
@@ -301,9 +325,8 @@ button:disabled {
   color: #6070ff;
   margin-top: 0.25rem;
   margin-left: 1rem;
-  font-weight: 500;
   font-style: normal;
-  width: 60%;
+  width: 50%;
 }
 
 .resume-mobile-btn:hover {
@@ -320,7 +343,6 @@ button:disabled {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
-  margin-left: -3rem;
 }
 
 .stacknav {
@@ -336,27 +358,26 @@ button:disabled {
   gap: 5rem;
   margin-top: 2rem;
   border-bottom: 0.1rem solid #acb7c3;
-  width: 80%;
+  width: 87%;
   list-style-type: none;
 }
 
 strong {
   font-size: 1.25rem;
-  font-weight: 500;
   font-style: normal;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
-  color: #000;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  color: #344563;
   margin-left: -2.5rem;
 }
 
 .skills {
   display: flex;
   font-size: 1.25rem;
-  gap: 10rem;
+  gap: 9.5rem;
   margin-top: 1.5rem;
   padding-top: 1rem;
   border-bottom: 0.1rem solid #acb7c3;
-  width: 80%;
+  width: 87%;
   list-style-type: none;
 }
 
@@ -383,14 +404,20 @@ strong {
   list-style-type: none;
 }
 
+.stacks li a {
+  text-decoration: none;
+  margin-top: 1rem;
+  color: #253858;
+  font-size: 0.9rem;
+}
+
 .html,
 .css,
 .js {
   display: flex;
   font-size: 1rem;
-  font-weight: 500;
   font-style: normal;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   background-color: #f7f7f9;
   border: 0.1rem solid #ebebff;
   border-radius: 0.5rem;
@@ -418,7 +445,7 @@ strong {
   font-size: 0.1rem;
 }
 
-.contact {
+.contactSection {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -426,8 +453,8 @@ strong {
   border-top-left-radius: 8rem;
 }
 
-.contact-bg-img {
-  background-image: url('/images/mobile-header-bg.png');
+.contactMobileBg {
+  background-image: url('/images/contactMobileBg.png');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -444,7 +471,6 @@ textarea {
   height: 3rem;
   padding-left: 0.5rem;
   font-size: 0.9rem;
-  font-weight: 500;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   background-color: #fff;
   border: 0.1rem solid #acb7c3;
@@ -469,7 +495,6 @@ textarea {
   margin-top: 1rem;
   width: 28%;
   margin-left: 2rem;
-  font-weight: 500;
   font-style: normal;
 }
 
@@ -506,9 +531,9 @@ textarea {
   margin-top: -3rem;
   margin-bottom: 1.5rem;
   line-height: 1.5rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
 }
 
 label {
@@ -516,4 +541,589 @@ label {
   padding-left: 2rem;
   font-size: 0.9rem;
   color: #ff000f;
+}
+
+/* mobile media - 768px below */
+
+@media (max-width: 768px) {
+  .menu,
+  .deskH1,
+  .deskTitle1,
+  .deskCompany2,
+  .deskP,
+  .deskTeck,
+  .mobileHideJob,
+  .mobileHideYear,
+  #deskP {
+    display: none;
+  }
+}
+
+/* desktop media - 768px onwards */
+
+@media (min-width: 768px) {
+  h1,
+  h3,
+  h4,
+  .navbar i,
+  .mobileimage1,
+  .mobileimage2,
+  #deskHideCanopy,
+  #deshHideP2,
+  .mobileP,
+  .mobileTeck,
+  .mobileimage3,
+  .mobileimage4,
+  #deskHideJob,
+  #deskHideYear,
+  .home-btn {
+    display: none;
+  }
+
+  body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
+  }
+
+  .list {
+    list-style-type: none;
+  }
+
+  .list a {
+    color: #344563;
+    text-align: center;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 20px;
+  }
+
+  #deskHeaderBg {
+    background-image: url('./images/desktopHeader-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    border-bottom-left-radius: 8rem;
+  }
+
+  .main {
+    width: 100%;
+    height: auto;
+  }
+
+  .deskH1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem;
+    width: 100%;
+    height: auto;
+    color: #091e42;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 3.75rem;
+    letter-spacing: 0.023125rem;
+  }
+
+  p {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem;
+    width: 70%;
+    color: #344563;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.75rem;
+  }
+
+  .about-p {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    color: #344563;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.75rem;
+  }
+
+  span {
+    display: flex;
+    color: var(--primary-b-300, #7f8cff);
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 2.5rem;
+    padding-left: 10rem;
+  }
+
+  .connect {
+    display: flex;
+    color: var(--primary-b-300, #7f8cff);
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 2.5rem;
+    margin-left: -8.5rem;
+  }
+
+  .navbar a {
+    color: #6070ff;
+    text-decoration: none;
+    padding-left: 4rem;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    padding: 0.4rem;
+    width: 100%;
+    background: #f7f7f9;
+  }
+
+  .media-links {
+    display: flex;
+    flex-flow: wrap;
+    gap: 2rem;
+    padding-left: 10.5rem;
+    width: 100%;
+  }
+
+  #connect-media-links {
+    display: flex;
+    flex-flow: wrap;
+    gap: 2rem;
+    margin-left: -8rem;
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+
+  .media-links li {
+    list-style-type: none;
+    margin-top: -0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .media-links i {
+    margin-left: -1rem;
+    font-size: 1.3rem;
+    color: #505f79;
+    width: 1.2rem;
+  }
+
+  .cards {
+    display: grid;
+    height: auto;
+    gap: 2rem;
+    margin-left: 12rem;
+    width: 100%;
+    margin-top: 5rem;
+    background: #f7f7f9;
+  }
+
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    display: grid;
+    grid-template-columns: 1.3fr 1.2fr;
+    border-radius: 1rem;
+    background: #fff;
+    height: 26rem;
+    padding-left: 1.5rem;
+    width: 80%;
+    margin-top: 4rem;
+  }
+
+  .about {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border: 0.063rem solid #fff;
+    border-top-right-radius: 10rem;
+    height: 40rem;
+    padding-left: 8rem;
+    width: 90.4%;
+    margin-top: 5rem;
+  }
+
+  .grid-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-grid-column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    color: #172b4d;
+    width: 100%;
+    height: auto;
+    font-style: normal;
+    line-height: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-weight: normal;
+  }
+
+  h5 {
+    font-size: 2.5rem;
+    color: #172b4d;
+    width: 100%;
+    height: auto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .deskTitle1 {
+    font-size: 2.5rem;
+    color: #091e42;
+    width: 70%;
+    height: auto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    margin-left: 0.5rem;
+  }
+
+  .deskImg1 {
+    background-image: url('./images/deskImg1.png');
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .deskImg2 {
+    background-image: url('./images/deskImg2.png');
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+
+  .deskImg3 {
+    background-image: url('./images/deskImg3.png');
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .deskImg4 {
+    background-image: url('./images/deskImg4.jpg');
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+
+  .mobile {
+    list-style-type: none;
+    display: flex;
+    width: 60%;
+    gap: 1.5rem;
+    line-height: 150%;
+    margin-top: -0.5rem;
+  }
+
+  .mobile li {
+    list-style: disc;
+    color: #6b778c;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  .mobile .company,
+  .deskCompany {
+    list-style-type: none;
+    font-style: normal;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color: #344563;
+    font-size: 1.2rem;
+    font-weight: normal;
+  }
+
+  .deskP {
+    color: #344563;
+    padding-left: 0.5rem;
+    line-height: 1.5rem;
+    font-size: 0.95rem;
+    font-style: normal;
+    font-weight: normal;
+    width: 82%;
+  }
+
+  .contact-p {
+    color: #fff;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    font-style: normal;
+    width: 36%;
+    text-align: center;
+    margin-left: 18rem;
+    font-weight: normal;
+  }
+
+  .deskCompany2 {
+    margin-left: -2rem;
+    color: #091e42;
+    font-size: 1rem;
+    font-style: normal;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+  }
+
+  .mobile .deskCompany2 {
+    list-style-type: none;
+  }
+
+  #desk-resume-btn {
+    display: flex;
+    align-items: center;
+    width: 10%;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+  }
+
+  .lang-area {
+    display: flex;
+    flex-direction: column;
+    margin-top: -25rem;
+    margin-left: 30rem;
+    width: 50%;
+  }
+
+  .stacknav {
+    display: flex;
+    gap: 19rem;
+    margin-top: 1rem;
+    list-style-type: none;
+    width: 50%;
+    padding-top: 2rem;
+  }
+
+  .fa-angle-down {
+    font-size: 1.3rem;
+    color: #505f79;
+    border: 0.1rem solid #acb7c3;
+    height: 1rem;
+    margin-top: 0.5rem;
+    margin-inline: 10rem;
+  }
+
+  .fa-angle-right {
+    font-size: 1.3rem;
+    color: #5e6c84;
+    height: 1rem;
+    margin-top: 0.5rem;
+    margin-inline: 21rem;
+  }
+
+  .stacks {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    list-style-type: none;
+    width: 80%;
+  }
+
+  .html,
+  .css,
+  .js {
+    display: grid;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color: #f7f7f9;
+    width: 80%;
+    margin-left: 1.2rem;
+    font-weight: normal;
+  }
+
+  .stacks a {
+    margin-top: -1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #253858;
+  }
+
+  .css::before {
+    margin-left: 1rem;
+    font-size: 0.5rem;
+    font-weight: normal;
+  }
+
+  .js::before {
+    margin-left: 1rem;
+    font-size: 0.5rem;
+    font-weight: normal;
+  }
+
+  .html::before {
+    margin-left: 1rem;
+    font-size: 0.5rem;
+    font-weight: normal;
+  }
+
+  .contactSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #6070ff;
+    border-top-left-radius: 8rem;
+    height: 47rem;
+  }
+
+  .contactMobileBg {
+    background-image: url('./images/contactDeskBg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+  }
+
+  h6 {
+    font-size: 2.5rem;
+    color: #fff;
+    width: 100%;
+    font-style: normal;
+    line-height: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    font-weight: normal;
+  }
+
+  input,
+  textarea {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    height: 3rem;
+    font-size: 0.9rem;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    border: 0.1rem solid #acb7c3;
+    border-radius: 0.5rem;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 0.8rem;
+    color: #7a869a;
+    margin-left: 30rem;
+  }
+
+  textarea {
+    height: 8rem;
+    padding-top: 1rem;
+  }
+
+  .contact-mobile-btn {
+    border: 0.01rem solid #ebebff;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    color: #6070ff;
+    margin-top: 1rem;
+    width: 10%;
+    margin-left: 38rem;
+    font-style: normal;
+  }
+
+  .see-mobile-btn {
+    border: 0.1rem solid #ebebff;
+    border-radius: 0.5rem;
+    height: 3rem;
+    font-size: 1rem;
+    color: #6070ff;
+    margin-top: 1.5rem;
+    width: 21%;
+    background: #fff;
+  }
+
+  strong {
+    font-size: 1rem;
+    font-style: normal;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color: #344563;
+    padding-left: 1rem;
+    font-weight: normal;
+  }
+
+  .frameworks {
+    display: flex;
+    gap: 8rem;
+    margin-top: 2rem;
+    border-bottom: 0.1rem solid #acb7c3;
+    width: 87%;
+    list-style-type: none;
+  }
+
+  .skills {
+    display: flex;
+    font-size: 1.25rem;
+    gap: 12rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-bottom: 0.1rem solid #acb7c3;
+    width: 87%;
+    list-style-type: none;
+  }
+
+  .mobile .company {
+    list-style-type: none;
+    font-size: 1rem;
+    color: #344563;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    margin-left: -2.25rem;
+  }
 }
