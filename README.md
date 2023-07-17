@@ -91,7 +91,7 @@ To run the project,
 ```
 ## 🚀 Live Demo <a name="live-demo"></a>
 
- - [Live Demo Link](https://github.com/efmomoh/Portfolio-setup-and-mobile-first/settings/pages)
+ - [Live Demo Link](https://efmomoh.github.io/Portfolio-setup-and-mobile-first/)
 
 ## 👥 Author <a name="authors"></a>
 
