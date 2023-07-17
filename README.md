@@ -43,6 +43,7 @@
 - Add label forms
 - Desktop layout
 - Animation effect applied to the desktop version
+- Deploy application live online
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
