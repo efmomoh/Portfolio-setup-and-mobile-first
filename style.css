@@ -682,14 +682,6 @@ label {
     margin-left: -8.5rem;
   }
 
-  .navbar a {
-    color: #6070ff;
-    text-decoration: none;
-    padding-left: 4rem;
-    padding-top: 1rem;
-    font-size: 1.2rem;
-  }
-
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -859,6 +851,43 @@ label {
     order: 2;
   }
 
+  .deskImg1:hover {
+    cursor: pointer;
+    font-size: 1rem;
+    height: 25rem;
+    transition: all 1s ease;
+    content: url(./images/ENSSAH\ FAYIA\ MOMOH.jpg);
+    padding-right: 4rem;
+  }
+
+  .deskImg2:hover {
+    cursor: pointer;
+    font-size: 2rem;
+    width: 100%;
+    height: 25rem;
+    transition: all 1s ease-out;
+    content: url(./images/EFMOMOH.JPG);
+  }
+
+  .deskImg3:hover {
+    cursor: pointer;
+    font-size: 1rem;
+    height: 25rem;
+    transition: all 1s;
+    content: url(./images/EFM-TWIN.JPG);
+    padding-right: 4rem;
+  }
+
+  .deskImg4:hover {
+    cursor: pointer;
+    font-size: 1rem;
+    height: 25rem;
+    transition: all 1s ease;
+    content: url(./images/EFM-NATUS.JPG);
+    padding-right: 4rem;
+    width: 60%;
+  }
+
   .mobile {
     list-style-type: none;
     display: flex;
@@ -928,6 +957,15 @@ label {
     margin-top: 1.5rem;
     font-size: 1.2rem;
     padding-left: 0.5rem;
+  }
+
+  #desk-resume-btn:hover {
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 11%;
+    transition: all 1s ease-in-out;
+    background-color: rgb(151, 125, 60);
+    color: #fff;
   }
 
   .lang-area {
@@ -1077,6 +1115,16 @@ label {
     font-style: normal;
   }
 
+  .contact-mobile-btn:hover {
+    cursor: pointer;
+    font-size: 2rem;
+    width: 11%;
+    height: auto;
+    transition: all 1s ease-in-out;
+    background-color: rgb(151, 125, 60);
+    color: #fff;
+  }
+
   .see-mobile-btn {
     border: 0.1rem solid #ebebff;
     border-radius: 0.5rem;
@@ -1086,6 +1134,15 @@ label {
     margin-top: 1.5rem;
     width: 21%;
     background: #fff;
+  }
+
+  .see-mobile-btn:hover {
+    cursor: pointer;
+    font-size: 1rem;
+    width: 13.5%;
+    transition: all 1s ease-in-out;
+    background-color: rgb(151, 125, 60);
+    color: #fff;
   }
 
   strong {
@@ -1125,5 +1182,36 @@ label {
     font-weight: normal;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     margin-left: -2.25rem;
+  }
+
+  .navbar a {
+    cursor: pointer;
+    width: 2%;
+    padding: 0;
+    margin-inline: 1rem;
+  }
+
+  .navbar a:hover {
+    font-size: 2rem;
+    color: #fff;
+    transform: rotate(-360deg);
+    background-color: rgb(237, 172, 7);
+    border-radius: 4rem;
+  }
+
+  .navbar .logo {
+    cursor: pointer;
+    width: 6%;
+    transition-duration: 2s;
+    padding: 1rem;
+    margin-inline: 1rem;
+    text-align: center;
+  }
+
+  .navbar .logo:hover {
+    font-size: 1.5rem;
+    color: #fff;
+    transform: rotate(-360deg);
+    background-color: rgb(237, 172, 7);
   }
 }

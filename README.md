@@ -11,6 +11,7 @@
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
+- [🚀 Live Demo ](#-live-demo-)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -41,6 +42,7 @@
 - Add the styling
 - Add label forms
 - Desktop layout
+- Animation effect applied to the desktop version
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -50,9 +52,10 @@
 
 
 1. Computer
-2. Web Browser
-2. Git
-3. Code Editor
+2. Internet
+3. Web Browser
+4. Git
+5. Code Editor
 
 ### Setup
 
@@ -86,6 +89,9 @@ To run the project,
    1. npx hint.
    2. npx stylelint "**/*.{css,scss}"
 ```
+## 🚀 Live Demo <a name="live-demo"></a>
+
+ - [Live Demo Link](https://efmomoh.github.io/Portfolio-setup-and-mobile-first/)
 
 ## 👥 Author <a name="authors"></a>
 
@@ -109,6 +115,7 @@ To run the project,
 - Adds About page section
 - Contact form
 - Desktop version
+- Animation Effects
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
