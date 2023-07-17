@@ -11,6 +11,7 @@
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
+- [🚀 Live Demo ](#-live-demo-)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -41,7 +42,7 @@
 - Add the styling
 - Add label forms
 - Desktop layout
-- Animation effect applied to desktop version
+- Animation effect applied to the desktop version
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -88,6 +89,8 @@ To run the project,
    1. npx hint.
    2. npx stylelint "**/*.{css,scss}"
 ```
+
+ - [🚀 Live Demo ](https://github.com/efmomoh/Portfolio-setup-and-mobile-first/settings/pages)
 
 ## 👥 Author <a name="authors"></a>
 
