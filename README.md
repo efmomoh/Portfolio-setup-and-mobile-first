@@ -93,7 +93,7 @@ To run the project,
 ## 🚀 Live Demo <a name="live-demo"></a>
 
  - [Live Demo Link](https://efmomoh.github.io/Portfolio-setup-and-mobile-first/)
- - [Watch My Loom Video Here] (https://www.loom.com/share/21ff5e893b024557bb1bbeaa9761cdcc?sid=0aa580f5-24ce-4847-86ef-980b036a362c)
+ - [Watch My Loom Video Here](https://www.loom.com/share/21ff5e893b024557bb1bbeaa9761cdcc?sid=0aa580f5-24ce-4847-86ef-980b036a362c)
 
 ## 👥 Author <a name="authors"></a>
 
