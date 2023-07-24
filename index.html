@@ -10,13 +10,12 @@
 </head>
 <body>
     <header class="header">
-        <nav class="navbar" >
+        <nav class="navbar">
             <a class="logo" href="#">My Logo</a>
-            <i class="fa-solid fa-bars"></i>
             <ul class="menu">
-                <li class="list"><a href="">Portfolio</a></li>
-                <li class="list"><a href="">About</a></li>
-                <li class="list"><a href="">Contact</a></li>
+                <li class="list"><a href="#">Portfolio</a></li>
+                <li class="list"><a href="#">About</a></li>
+                <li class="list"><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -35,13 +34,14 @@
             </ul>
         </div>
     </section>
+    <section class="cardSection">
+        <!-- cards1  -->
     <section class="cards">
-        <!-- card1  -->
-    <section class="card1">
         <div class="mobileimage1"></div>
         <div class="deskImg1"></div>
         <div class="grid-column">
             <h2>Tonic</h2>
+            <h2 class="deskTitle1">Tonic</h2>
             <ul class="mobile">
                 <li class="company">CANOPY</li>
                 <li>Back End Dev</li>
@@ -60,7 +60,7 @@
         </div>
         </section>
         <!-- card2  -->
-        <section class="card2">
+        <section class="cards">
             <div class="mobileimage2"></div>
             <div class="deskImg2"></div>
             <div class="grid-column">
@@ -93,8 +93,8 @@
                 <button class="see-mobile-btn" type="submit">See Projects</button>
             </div>
         </section>
-        <!-- card 3 -->
-        <section class="card3">
+        <!-- cards 3 -->
+        <section class="cards">
             <div class="mobileimage3"></div>
             <div class="deskImg3"></div>
             <div class="grid-colum">
@@ -128,7 +128,7 @@
             </div>
         </section>
         <!-- card4 -->
-        <section class="card4">
+        <section class="cards">
             <div class="mobileimage4"></div>
             <div class="deskImg4"></div>
             <div class="grid-colum">
@@ -206,17 +206,18 @@
             <h6>Contact me</h6>
             <p class="contact-p">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
             I’d love to help with it!</p>
-            <form action="https://formspree.io/f/xjvdador" method="post">
+            <form action="https://formspree.io/f/xjvdador" method="POST">
                 <label for="name">Name:</label>
                 <input type="name" id="name" name="user_name" placeholder="Lorem Ipsum" maxlength="30" required>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="user_name" placeholder="loremipsum@gmail.com" required>
                 <label for="msg">Message:</label>
-                <textarea name="user_name" id="msg" cols="15" rows="10" maxlength="500" required>Write your message here...</textarea>
+                <textarea name="user_name" id="msg" cols="15" rows="10" maxlength="500" placeholder="Write me a message here..." required></textarea>
                 <button class="contact-mobile-btn" type="submit">Get in touch</button>
             </form>
         </div>
         <div class="home-btn"></div>
     </section>
+    <script src="./javaScripts/index.js"></script>
 </body>
 </html>
