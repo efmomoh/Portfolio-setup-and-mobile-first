@@ -5,7 +5,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   height: auto;
-  width: 90%;
+  width: 100%;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   background: #f7f7f9;
   font-weight: normal;
@@ -17,13 +17,14 @@ body {
   width: 100%;
   overflow: hidden;
   position: fixed;
+  background-color: #f7f7f9;
 }
 
 .navbar {
   display: flex;
   height: auto;
   padding: 0.8rem;
-  gap: 16rem;
+  gap: 16.5rem;
 }
 
 .navbar a {
@@ -44,6 +45,7 @@ body {
   background-image: url('./images/mobile-header-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 
 h1 {
@@ -142,8 +144,8 @@ span {
   display: grid;
   height: auto;
   gap: 2rem;
-  padding-left: 1rem;
-  width: 325px;
+  padding-left: 1.2rem;
+  width: 90%;
   margin-top: 5rem;
 }
 
@@ -431,7 +433,7 @@ strong {
 .contactSection {
   display: flex;
   flex-direction: column;
-  width: 110%;
+  width: 100%;
   background-color: #6070ff;
   border-top-left-radius: 8rem;
 }
@@ -548,7 +550,6 @@ label {
     transition: all 0.3s ease-in-out;
     background-color: #6070ff;
     font-size: 1rem;
-
   }
 
   .hamburger {
@@ -592,12 +593,13 @@ label {
   .list a {
     color: #fff;
     font-size: 2rem;
+    font-weight: normal;
   }
 
   .menu.active {
     left: 0;
     background-color: #1221accc;
-    height: 100vh;
+    height: 200vh;
   }
 }
 
@@ -645,9 +647,9 @@ label {
     color: #344563;
     text-align: center;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 2rem;
     font-style: normal;
-    line-height: 20px;
+    line-height: 3.5rem;
   }
 
   #deskHeaderBg {
