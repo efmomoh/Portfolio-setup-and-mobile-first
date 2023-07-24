@@ -542,11 +542,13 @@ label {
 
   .bar {
     display: block;
-    width: 4px;
+    width: 1%;
     height: 3px;
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
     background-color: #6070ff;
+    font-size: 1rem;
+
   }
 
   .hamburger {
@@ -578,22 +580,23 @@ label {
     width: 100%;
     align-items: center;
     transition: 0.3s;
-    padding-top: 70px;
+    padding-top: 40px;
     padding-left: 20px;
   }
 
   .list {
-    margin: 2rem;
+    margin: 1rem;
     list-style-type: none;
   }
 
   .list a {
     color: #fff;
+    font-size: 2rem;
   }
 
   .menu.active {
     left: 0;
-    background-color: #1222acca;
+    background-color: #1221accc;
     height: 100vh;
   }
 }
