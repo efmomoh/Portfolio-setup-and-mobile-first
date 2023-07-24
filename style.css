@@ -549,28 +549,28 @@ label {
     transition: all 0.3s ease-in-out;
     background-color: #6070ff;
   }
-  
-  
+
+
   .hamburger {
     display: block;
     cursor: pointer;
     z-index: 3;
   }
-  
+
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-  
+
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
     background-color: #fff !important;
   }
-  
+
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
     background-color: #fff !important;
   }
-  
+
   .menu {
     position: fixed;
     left: -100%;
@@ -583,7 +583,7 @@ label {
     padding-top: 70px;
     padding-left: 20px;
   }
-  
+
   .list {
     margin: 2rem;
     list-style-type: none;
@@ -592,13 +592,12 @@ label {
   .list a {
     color: #fff;
   }
-  
+
   .menu.active {
     left: 0;
     background-color: #1222acca;
     height: 100vh;
   }
-  
 }
 
 /* desktop media - 768px onwards */
@@ -639,7 +638,6 @@ label {
 
   .list {
     list-style-type: none;
-
   }
 
   .list a {
