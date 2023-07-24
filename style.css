@@ -5,7 +5,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   height: auto;
-  width: 100%;
+  width: 90%;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   background: #f7f7f9;
   font-weight: normal;
@@ -13,7 +13,6 @@ body {
 
 .header {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   width: 100%;
   overflow: hidden;
@@ -27,16 +26,6 @@ body {
   gap: 16rem;
 }
 
-.fa-bars {
-  font-size: 1.5rem;
-  color: #6070ff;
-}
-
-i {
-  font-size: 1.5rem;
-  color: #6070ff;
-}
-
 .navbar a {
   color: #6070ff;
   text-decoration: none;
@@ -45,26 +34,22 @@ i {
 .main {
   display: flex;
   flex-direction: column;
-  width: 100%;
   padding-top: 2rem;
   height: auto;
   border: 1px solid #f7f7f9;
-  border-bottom-left-radius: 8rem;
+  border-bottom-left-radius: 16rem;
 }
 
 .mobile-header-bg {
   background-image: url('./images/mobile-header-bg.png');
   background-repeat: no-repeat;
-  width: 96.5%;
-  height: 40rem;
-  padding: 0;
-  margin: 0;
+  background-size: cover;
 }
 
 h1 {
   font-size: 2rem;
   color: #172b4d;
-  width: 100%;
+  width: 90%;
   padding-top: 8rem;
   padding-left: 1.5rem;
   font-style: normal;
@@ -101,7 +86,7 @@ h6 {
 
 p {
   color: #344563;
-  width: 92%;
+  width: 87%;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   line-height: 1.5rem;
@@ -153,18 +138,16 @@ span {
   font-weight: normal;
 }
 
-.cards {
+.cardSection {
   display: grid;
   height: auto;
   gap: 2rem;
-  padding-left: 1.5rem;
-  width: 87%;
+  padding-left: 1rem;
+  width: 325px;
+  margin-top: 5rem;
 }
 
-.card1,
-.card2,
-.card3,
-.card4 {
+.cards {
   display: flex;
   flex-direction: column;
   border: 0.063rem solid #dfe1e6;
@@ -358,7 +341,7 @@ button:disabled {
   gap: 5rem;
   margin-top: 2rem;
   border-bottom: 0.1rem solid #acb7c3;
-  width: 87%;
+  width: 70%;
   list-style-type: none;
 }
 
@@ -377,7 +360,7 @@ strong {
   margin-top: 1.5rem;
   padding-top: 1rem;
   border-bottom: 0.1rem solid #acb7c3;
-  width: 87%;
+  width: 70%;
   list-style-type: none;
 }
 
@@ -448,7 +431,7 @@ strong {
 .contactSection {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 110%;
   background-color: #6070ff;
   border-top-left-radius: 8rem;
 }
@@ -543,10 +526,10 @@ label {
   color: #ff000f;
 }
 
+
 /* mobile media - 768px below */
 
 @media (max-width: 768px) {
-  .menu,
   .deskH1,
   .deskTitle1,
   .deskCompany2,
@@ -557,15 +540,75 @@ label {
   #deskP {
     display: none;
   }
+
+  .bar {
+    display: block;
+    width: 4px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #6070ff;
+  }
+  
+  
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    z-index: 3;
+  }
+  
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    background-color: #fff !important;
+  }
+  
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    background-color: #fff !important;
+  }
+  
+  .menu {
+    position: fixed;
+    left: -100%;
+    top: -16px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    transition: 0.3s;
+    padding-top: 70px;
+    padding-left: 20px;
+  }
+  
+  .list {
+    margin: 2rem;
+    list-style-type: none;
+  }
+
+  .list a {
+    color: #fff;
+  }
+  
+  .menu.active {
+    left: 0;
+    background-color: #1222acca;
+    height: 100vh;
+  }
+  
 }
 
 /* desktop media - 768px onwards */
 
 @media (min-width: 768px) {
   h1,
+  h2,
   h3,
   h4,
-  .navbar i,
+  .navbar,
   .mobileimage1,
   .mobileimage2,
   #deskHideCanopy,
@@ -576,7 +619,8 @@ label {
   .mobileimage4,
   #deskHideJob,
   #deskHideYear,
-  .home-btn {
+  .home-btn,
+  .hamburger {
     display: none;
   }
 
@@ -595,6 +639,7 @@ label {
 
   .list {
     list-style-type: none;
+
   }
 
   .list a {
@@ -722,7 +767,7 @@ label {
     width: 1.2rem;
   }
 
-  .cards {
+  .cardSection {
     display: grid;
     height: auto;
     gap: 2rem;
@@ -732,10 +777,7 @@ label {
     background: #f7f7f9;
   }
 
-  .card1,
-  .card2,
-  .card3,
-  .card4 {
+  .cards {
     display: grid;
     grid-template-columns: 1.3fr 1.2fr;
     border-radius: 1rem;
@@ -766,19 +808,6 @@ label {
     display: flex;
     flex-direction: column;
     margin-top: 4rem;
-  }
-
-  h2 {
-    font-size: 2.5rem;
-    color: #172b4d;
-    width: 100%;
-    height: auto;
-    font-style: normal;
-    line-height: 2rem;
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    font-weight: normal;
   }
 
   h5 {
@@ -1189,10 +1218,12 @@ label {
     width: 2%;
     padding: 0;
     margin-inline: 1rem;
+    color: #6070ff;
+    font-size: 1.2rem;
   }
 
   .navbar a:hover {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #fff;
     transform: rotate(-360deg);
     background-color: rgb(237, 172, 7);
@@ -1208,10 +1239,10 @@ label {
     text-align: center;
   }
 
-  .navbar .logo:hover {
+  /* navbar logo:hover {
     font-size: 1.5rem;
     color: #fff;
     transform: rotate(-360deg);
     background-color: rgb(237, 172, 7);
-  }
+  } */
 }
