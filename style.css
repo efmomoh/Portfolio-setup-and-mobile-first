@@ -526,7 +526,6 @@ label {
   color: #ff000f;
 }
 
-
 /* mobile media - 768px below */
 
 @media (max-width: 768px) {
@@ -549,7 +548,6 @@ label {
     transition: all 0.3s ease-in-out;
     background-color: #6070ff;
   }
-
 
   .hamburger {
     display: block;
