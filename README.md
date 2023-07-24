@@ -103,8 +103,11 @@ To run the project,
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/efmomoh?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BQI%2F5GWZxS063VqRg2rilyg%3D%3D)
 
 👤 **Srilearns**
+  - GitHub: [@githubhandle](https://github.com/Srilearns)
 
-- GitHub: [@githubhandle](https://github.com/Srilearns)
+👤 **Srilearns**
+  - GitHub: [@githubhandle]( https://github.com/lucy-sees)
+ 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -117,6 +120,7 @@ To run the project,
 - Contact form
 - Desktop version
 - Animation Effects
+- Adds mobile menu toogler
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
