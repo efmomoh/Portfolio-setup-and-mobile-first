@@ -107,7 +107,7 @@ To run the project,
   - GitHub: [@githubhandle](https://github.com/Srilearns)
 
 👤 **Lucy-Sees**
-  - GitHub: [@githubhandle]( https://github.com/lucy-sees)
+  - GitHub: [@githubhandle](https://github.com/lucy-sees)
  
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
