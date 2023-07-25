@@ -106,7 +106,7 @@ To run the project,
 👤 **Srilearns**
   - GitHub: [@githubhandle](https://github.com/Srilearns)
 
-👤 **Srilearns**
+👤 **Lucy-Sees**
   - GitHub: [@githubhandle]( https://github.com/lucy-sees)
  
 
