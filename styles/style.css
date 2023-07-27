@@ -16,11 +16,14 @@ body {
   display: none;
 }
 
-.error-message {
-  color: #fff;
+.return-error-message {
+  color: #f80606;
   margin-top: 20px;
   text-shadow: 2px 3px 1px #0d151e;
   font-size: 20px;
+  background-color: rgb(96, 92, 92);
+  width: 70%;
+  height: auto;
 }
 
 .desktop-menu,
@@ -264,6 +267,10 @@ body {
   margin: 10px 0 20px 0;
 }
 
+.work-btn:active {
+  color: #fff;
+}
+
 .work .work-btn:hover {
   color: #fff;
   background-color: #6070ff;
@@ -274,6 +281,10 @@ body {
   color: #fff;
   background-color: #6070ff;
   border: 1px solid #6070ff;
+}
+
+.resume-btn:enabled {
+  color: #6070ff;
 }
 
 .aboutMyself {
@@ -419,6 +430,26 @@ body {
   font-size: 1.1em;
   outline: none;
   border: none;
+}
+
+button:disabled {
+  color: #5e6c84;
+}
+
+button:enabled {
+  color: #5e6c84;
+}
+
+button:active {
+  background-color: #2230d2;
+}
+
+.form button:active {
+  color: #6070ff;
+}
+
+.form button:disabled {
+  color: #fff;
 }
 
 .contactBtn:hover {
@@ -948,6 +979,14 @@ textarea {
     height: auto;
     transition: all 1s ease-in-out;
     background-color: rgb(151, 125, 60);
+  }
+
+  .contactBtn:active {
+    color: #6070ff;
+  }
+
+  .contactBtn:disabled {
+    color: #6070ff;
   }
 
   .img-card:hover {
