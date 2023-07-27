@@ -142,3 +142,26 @@ const closeBtn = document.querySelector('.close-popup-x');
 closeBtn.addEventListener('click', () => {
   popupContainer.classList.add('show-none');
 });
+
+// FORM VALIDATION
+
+// Validate Contact Form
+
+// Validate Contact Form
+
+const form = document.querySelector('#form');
+const email = document.getElementById('email');
+const errorMessage = document.querySelector('.return-error-message');
+
+function showErrorMessage() {
+  if (email.value.trim() !== email.value.trim().toLowerCase()) {
+    errorMessage.textContent = '"EMAIL ADDRESS NOT ENTERED CORRECTLY". Kindly use lowercase characters for your email address using this format: "contactme1@gmail.com".';
+  }
+}
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (email.value.trim() !== email.value.trim().toLowerCase()) {
+    showErrorMessage();
+  }
+});
