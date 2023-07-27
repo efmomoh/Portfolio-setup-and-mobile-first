@@ -155,13 +155,22 @@ const errorMessage = document.querySelector('.return-error-message');
 
 function showErrorMessage() {
   if (email.value.trim() !== email.value.trim().toLowerCase()) {
-    errorMessage.textContent = '"EMAIL ADDRESS NOT ENTERED CORRECTLY". Kindly use lowercase characters for your email address using this format: "contactme1@gmail.com".';
+    errorMessage.textContent = '"EMAIL ADDRESS NOT ENTERED CORRECTLY".❌ Kindly use lowercase characters for your email address using this format: "contactme1@gmail.com".';
   }
+}
+
+function clearErrorMessage() {
+  errorMessage.textContent = 'CONGRATULATIONS! 🤝👏 Form Successfully Submitted ✅';
 }
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
+  clearErrorMessage();
+
   if (email.value.trim() !== email.value.trim().toLowerCase()) {
     showErrorMessage();
+
+  } else {
+    form.submit();
   }
 });
