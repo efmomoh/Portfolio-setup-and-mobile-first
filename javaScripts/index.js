@@ -1,9 +1,9 @@
-// Mobile menu 
+// Mobile menu
 
 const mobileMenu = document.querySelector('.mobile-menu');
 const desktopMenu = document.querySelector('.desktop-menu');
 
-// addEventListener-listener 
+// addEventListener-listener
 
 mobileMenu.addEventListener('click', () => {
   mobileMenu.classList.toggle('active');
@@ -45,7 +45,7 @@ const projectsArray = [
     desktopName: 'FACEBOOK 360',
     devDetails: ['FACEBOOK', 'Full Stack Dev', 2015],
     description: ['A daily  selection of privately personalized reads; no accounts or sign-ups required.', 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.'],
-    technologies: ['HTML','Ruby on Rails', 'CSS', 'JavaScript'],
+    technologies: ['HTML', 'Ruby on Rails', 'CSS', 'JavaScript'],
     mobileImage: './images/mobileImg3.jpg',
     desktopImage: './images/deskImg3.png',
   },
@@ -117,7 +117,7 @@ for (let i = 0; i < workBtn.length; i += 1) {
     mobilePopuoModalTitle.textContent = projectsArray[i].mobileName;
     desktopPopupModalTitle.textContent = projectsArray[i].desktopName;
 
-    // using the array for destructuring 
+    // using the array for destructuring
 
     const [companyB, backEndDevB, yearB] = projectsArray[i].devDetails;
     const [mobileTextB, desktopTextB] = projectsArray[i].description;
@@ -167,20 +167,19 @@ form.addEventListener('submit', (event) => {
 
   if (email.value.trim() !== email.value.trim().toLowerCase()) {
     showErrorMessage();
-
   } else {
     form.submit();
   }
 });
 
-// Local storage / save user data locally 
+// Local storage / save user data locally
 
 const locateLocalForm = document.querySelector('.form');
 const userName = document.querySelector('#fullname');
 const message = document.querySelector('#message');
 const emailID = document.querySelector('#email');
 
-// collect form data 
+// collect form data
 
 function getFormData() {
   const formData = {
@@ -191,14 +190,14 @@ function getFormData() {
   return formData;
 }
 
-// Add an event listener to the local form storage area 
+// Add an event listener to the local form storage area
 
 locateLocalForm.addEventListener('change', () => {
   const formData = getFormData();
   localStorage.setItem('formData', JSON.stringify(formData));
 });
 
-// Add an eevnt listener to the page/window to save input data when user loads the page 
+// Add an eevnt listener to the page/window to save input data when user loads the page
 
 window.addEventListener('load', () => {
   const data = JSON.parse(localStorage.getItem('formData'));
