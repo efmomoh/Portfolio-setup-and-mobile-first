@@ -145,9 +145,7 @@ closeBtn.addEventListener('click', () => {
 
 // FORM VALIDATION
 
-// Validate Contact Form
-
-// Validate Contact Form
+// Validate the email input Form
 
 const form = document.querySelector('#form');
 const email = document.getElementById('email');
@@ -172,5 +170,41 @@ form.addEventListener('submit', (event) => {
 
   } else {
     form.submit();
+  }
+});
+
+// Local storage / save user data locally 
+
+const locateLocalForm = document.querySelector('.form');
+const userName = document.querySelector('#fullname');
+const message = document.querySelector('#message');
+const emailID = document.querySelector('#email');
+
+// collect form data 
+
+function getFormData() {
+  const formData = {
+    userName: userName.value,
+    emailID: emailID.value,
+    message: message.value,
+  };
+  return formData;
+}
+
+// Add an event listener to the local form storage area 
+
+locateLocalForm.addEventListener('change', () => {
+  const formData = getFormData();
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+// Add an eevnt listener to the page/window to save input data when user loads the page 
+
+window.addEventListener('load', () => {
+  const data = JSON.parse(localStorage.getItem('formData'));
+  if (data) {
+    userName.value = data.userName;
+    emailID.value = data.emailID;
+    message.value = data.message;
   }
 });
