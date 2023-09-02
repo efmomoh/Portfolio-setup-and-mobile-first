@@ -1,101 +1,99 @@
 // Mobile menu
 
-const mobileMenu = document.querySelector(".mobile-menu");
-const desktopMenu = document.querySelector(".desktop-menu");
+const mobileMenu = document.querySelector('.mobile-menu');
+const desktopMenu = document.querySelector('.desktop-menu');
 
 // addEventListener-listener
 
-mobileMenu.addEventListener("click", () => {
-  mobileMenu.classList.toggle("active");
-  desktopMenu.classList.toggle("active");
+mobileMenu.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+  desktopMenu.classList.toggle('active');
 });
 
-document.querySelectorAll(".nav-link").forEach((n) =>
-  n.addEventListener("click", () => {
-    mobileMenu.classList.remove("active");
-    desktopMenu.classList.remove("active");
-  })
-);
+document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
+  mobileMenu.classList.remove('active');
+  desktopMenu.classList.remove('active');
+}));
 
 //= ============= Popup Window, Dynamic Rendering==============>
 
-let html = "";
+let html = '';
 const projectsArray = [
   {
     id: 0,
-    mobileName: "Tonic",
-    desktopName: "Tonic",
-    devDetails: ["CANOPY", "Back End Dev", 2015],
+    mobileName: 'Tonic',
+    desktopName: 'Tonic',
+    devDetails: ['CANOPY', 'Back End Dev', 2015],
     description: [
-      "A daily  selection of privately personalized reads; no accounts or sign-ups required.",
-      "A daily  selection of privately personalized reads; no accounts or sign-ups required.",
+      'A daily  selection of privately personalized reads; no accounts or sign-ups required.',
+      'A daily  selection of privately personalized reads; no accounts or sign-ups required.',
     ],
-    technologies: ["HTML", "Ruby on Rails", "CSS", "JavaScript"],
-    mobileImage: ["./images/mobileImg1.jpg", "./images/Screenshot-1.png"],
-    desktopImage: ["./images/deskImg1.png", "./images/desk1.png"],
-    seeLive: ["https://github.com/efmomoh/Capstone-Project-HTML-CSS-JS/"],
-    seeSource: ["https://efmomoh.github.io/Capstone-Project-HTML-CSS-JS"],
+    technologies: ['HTML', 'Ruby on Rails', 'CSS', 'JavaScript'],
+    mobileImage: ['./images/mobileImg1.jpg', './images/Screenshot-1.png'],
+    desktopImage: ['./images/deskImg1.png', './images/desk1.png'],
+    seeLive: ['https://github.com/efmomoh/Capstone-Project-HTML-CSS-JS/'],
+    seeSource: ['https://efmomoh.github.io/Capstone-Project-HTML-CSS-JS'],
   },
   {
     id: 1,
-    mobileName: "Multi-Post Stories",
-    desktopName: "Multi-Post Stories",
-    devDetails: ["FACEBOOK", "Full Stack Dev", 2015],
+    mobileName: 'Multi-Post Stories',
+    desktopName: 'Multi-Post Stories',
+    devDetails: ['FACEBOOK', 'Full Stack Dev', 2015],
     description: [
-      "A daily  selection of privately personalized reads; no accounts or sign-ups required.",
-      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
+      'A daily  selection of privately personalized reads; no accounts or sign-ups required.',
+      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     ],
-    technologies: ["HTML", "Ruby on Rails", "CSS", "JavaScript"],
-    mobileImage: ["./images/mobileImg2.jpg", "./images/todolist.png"],
-    desktopImage: ["./images/deskImg2.png", "./images/deskScreen-2.png"],
-    seeLive: ["https://efmomoh.github.io/Capstone-Project-HTML-CSS-JS/"],
-    seeSource: ["https://efmomoh.github.io/Capstone-Project-HTML-CSS-JS"],
+    technologies: ['HTML', 'Ruby on Rails', 'CSS', 'JavaScript'],
+    mobileImage: ['./images/mobileImg2.jpg', './images/todolist.png'],
+    desktopImage: ['./images/deskImg2.png', './images/deskScreen-2.png'],
+    seeLive: ['https://efmomoh.github.io/Capstone-Project-HTML-CSS-JS/'],
+    seeSource: ['https://efmomoh.github.io/Capstone-Project-HTML-CSS-JS'],
   },
   {
     id: 2,
-    mobileName: "Tonic",
-    desktopName: "FACEBOOK 360",
-    devDetails: ["FACEBOOK", "Full Stack Dev", 2015],
+    mobileName: 'Tonic',
+    desktopName: 'FACEBOOK 360',
+    devDetails: ['FACEBOOK', 'Full Stack Dev', 2015],
     description: [
-      "A daily  selection of privately personalized reads; no accounts or sign-ups required.",
-      "Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+      'A daily  selection of privately personalized reads; no accounts or sign-ups required.',
+      'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
     ],
-    technologies: ["HTML", "Ruby on Rails", "CSS", "JavaScript"],
-    mobileImage: ["./images/mobileImg3.jpg", "./images/books.png"],
-    desktopImage: ["./images/deskImg3.png", "./images/deskScreen-3.png"],
-    seeLive: ["https://github.com/efmomoh/TO-DO-LIST/dist"],
-    seeSource: ["https://efmomoh.github.io/TO-DO-LIST"],
+    technologies: ['HTML', 'Ruby on Rails', 'CSS', 'JavaScript'],
+    mobileImage: ['./images/mobileImg3.jpg', './images/books.png'],
+    desktopImage: ['./images/deskImg3.png', './images/deskScreen-3.png'],
+    seeLive: ['https://github.com/efmomoh/TO-DO-LIST/dist'],
+    seeSource: ['https://efmomoh.github.io/TO-DO-LIST'],
   },
   {
     id: 3,
-    mobileName: "Multi-Post Stories",
-    desktopName: "Uber Navigation",
-    devDetails: ["Uber", "Lead Developer", 2018],
+    mobileName: 'Multi-Post Stories',
+    desktopName: 'Uber Navigation',
+    devDetails: ['Uber', 'Lead Developer', 2018],
     description: [
-      "A daily  selection of privately personalized reads; no accounts or sign-ups required.",
-      "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
+      'A daily  selection of privately personalized reads; no accounts or sign-ups required.',
+      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     ],
-    technologies: ["HTML", "Ruby on Rails", "CSS", "JavaScript"],
-    mobileImage: ["./images/mobileImg4.jpg", "./images/Screenshot (65).png"],
-    desktopImage: ["./images/deskImg4.jpg", "./images/desk2.png"],
-    seeLive: ["https://github.com/efmomoh/my-books/"],
-    seeSource: ["https://github.com/efmomoh/my-books"],
+    technologies: ['HTML', 'Ruby on Rails', 'CSS', 'JavaScript'],
+    mobileImage: ['./images/mobileImg4.jpg', './images/Screenshot (65).png'],
+    desktopImage: ['./images/deskImg4.jpg', './images/desk2.png'],
+    seeLive: ['https://github.com/efmomoh/my-books/'],
+    seeSource: ['https://github.com/efmomoh/my-books'],
   },
   {
     id: 4,
-    mobileName: "Microverse",
-    desktopName: "Microverse",
-    devDetails: ["FACEBOOK", "Full Stack Dev", 2023],
+    mobileName: 'Microverse',
+    desktopName: 'Microverse',
+    devDetails: ['FACEBOOK', 'Full Stack Dev', 2023],
     description: [
-      "A daily  selection of privately personalized reads; no accounts or sign-ups required.",
-      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
+      'A daily  selection of privately personalized reads; no accounts or sign-ups required.',
+      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     ],
-    technologies: ["HTML", "Ruby on Rails", "CSS", "JavaScript"],
-    mobileImage: ["./images/mobileImg2.jpg", "./images/todolist.png"],
-    desktopImage: ["./images/deskImg2.png", "./images/deskScreen-4.png"],
+    technologies: ['HTML', 'Ruby on Rails', 'CSS', 'JavaScript'],
+    mobileImage: ['./images/mobileImg2.jpg', './images/todolist.png'],
+    desktopImage: ['./images/deskImg2.png', './images/deskScreen-4.png'],
     seeLive:
-      ["https://efmomoh.github.io/Capstone-Project-HTML-CSS-JS/about.html"],
-    seeSource: ["https://efmomoh.github.io/Capstone-Project-HTML-CSS-JS"],
+      ['https://efmomoh.github.io/Capstone-Project-HTML-CSS-JS/about.html'],
+    seeSource: ['https://efmomoh.github.io/Capstone-Project-HTML-CSS-JS'],
   },
 ];
 
@@ -129,33 +127,31 @@ projectsArray.forEach((card) => {
 </div>`;
 });
 
-const workSection = document.querySelector(".work-section");
+const workSection = document.querySelector('.work-section');
 workSection.innerHTML = html;
 
 // Popup-Modal-window
 
-const workBtn = document.querySelectorAll(".work-btn");
-const popupContainer = document.querySelector(".modalContainer");
+const workBtn = document.querySelectorAll('.work-btn');
+const popupContainer = document.querySelector('.modalContainer');
 
 for (let i = 0; i < workBtn.length; i += 1) {
-  workBtn[i].addEventListener("click", () => {
-    const mobilePopuoModalTitle =
-      popupContainer.querySelector(".mobileModalTitle");
-    const desktopPopupModalTitle =
-      popupContainer.querySelector(".desktopModalTitle");
+  workBtn[i].addEventListener('click', () => {
+    const mobilePopuoModalTitle = popupContainer.querySelector('.mobileModalTitle');
+    const desktopPopupModalTitle = popupContainer.querySelector('.desktopModalTitle');
 
-    const companyA = popupContainer.querySelector(".canopy");
-    const backEndDevA = popupContainer.querySelector(".back-end-dev");
-    const yearA = popupContainer.querySelector(".year");
+    const companyA = popupContainer.querySelector('.canopy');
+    const backEndDevA = popupContainer.querySelector('.back-end-dev');
+    const yearA = popupContainer.querySelector('.year');
 
-    const mobileTextA = popupContainer.querySelector(".mobilePopupText");
-    const desktopTextA = popupContainer.querySelector(".desktopPopupText");
+    const mobileTextA = popupContainer.querySelector('.mobilePopupText');
+    const desktopTextA = popupContainer.querySelector('.desktopPopupText');
 
-    const mobilepopupImg = popupContainer.querySelector(".mobilePopupImg");
-    const desktoppopupImg = popupContainer.querySelector(".desktopPopupImg");
+    const mobilepopupImg = popupContainer.querySelector('.mobilePopupImg');
+    const desktoppopupImg = popupContainer.querySelector('.desktopPopupImg');
 
-    const seeLiveLink = popupContainer.querySelector(".seeLive");
-    const seeSourceLink = popupContainer.querySelector(".seeSource");
+    const seeLiveLink = popupContainer.querySelector('.seeLive');
+    const seeSourceLink = popupContainer.querySelector('.seeSource');
 
     mobilePopuoModalTitle.textContent = projectsArray[i].mobileName;
     desktopPopupModalTitle.textContent = projectsArray[i].desktopName;
@@ -172,44 +168,42 @@ for (let i = 0; i < workBtn.length; i += 1) {
     backEndDevA.textContent = backEndDevB;
     yearA.textContent = yearB;
 
-    mobilepopupImg.setAttribute("src", projectsArray[i].mobileImage[1]);
-    desktoppopupImg.setAttribute("src", projectsArray[i].desktopImage[1]);
+    mobilepopupImg.setAttribute('src', projectsArray[i].mobileImage[1]);
+    desktoppopupImg.setAttribute('src', projectsArray[i].desktopImage[1]);
 
-    seeLiveLink.setAttribute("src", projectsArray[i].seeLive[0]);
-    seeSourceLink.setAttribute("src", projectsArray[i].seeSource[0]);
+    seeLiveLink.setAttribute('src', projectsArray[i].seeLive[0]);
+    seeSourceLink.setAttribute('src', projectsArray[i].seeSource[0]);
 
-    popupContainer.classList.remove("show-none");
+    popupContainer.classList.remove('show-none');
   });
 }
 
 // close-popup-x button
 
-const closeBtn = document.querySelector(".close-popup-x");
-closeBtn.addEventListener("click", () => {
-  popupContainer.classList.add("show-none");
+const closeBtn = document.querySelector('.close-popup-x');
+closeBtn.addEventListener('click', () => {
+  popupContainer.classList.add('show-none');
 });
 
 // FORM VALIDATION
 
 // Validate the email input Form
 
-const form = document.querySelector("#form");
-const email = document.getElementById("email");
-const errorMessage = document.querySelector(".return-error-message");
+const form = document.querySelector('#form');
+const email = document.getElementById('email');
+const errorMessage = document.querySelector('.return-error-message');
 
 function showErrorMessage() {
   if (email.value.trim() !== email.value.trim().toLowerCase()) {
-    errorMessage.textContent =
-      '"EMAIL ADDRESS NOT ENTERED CORRECTLY".❌ Kindly use lowercase characters for your email address using this format: "contactme1@gmail.com".';
+    errorMessage.textContent = '"EMAIL ADDRESS NOT ENTERED CORRECTLY".❌ Kindly use lowercase characters for your email address using this format: "contactme1@gmail.com".';
   }
 }
 
 function clearErrorMessage() {
-  errorMessage.textContent =
-    "CONGRATULATIONS! 🤝👏 Form Successfully Submitted ✅";
+  errorMessage.textContent = 'CONGRATULATIONS! 🤝👏 Form Successfully Submitted ✅';
 }
 
-form.addEventListener("submit", (event) => {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
   clearErrorMessage();
 
@@ -222,10 +216,10 @@ form.addEventListener("submit", (event) => {
 
 // Local storage / save user data locally
 
-const locateLocalForm = document.querySelector(".form");
-const userName = document.querySelector("#fullname");
-const message = document.querySelector("#message");
-const emailID = document.querySelector("#email");
+const locateLocalForm = document.querySelector('.form');
+const userName = document.querySelector('#fullname');
+const message = document.querySelector('#message');
+const emailID = document.querySelector('#email');
 
 // collect form data
 
@@ -240,15 +234,15 @@ function getFormData() {
 
 // Add an event listener to the local form storage area
 
-locateLocalForm.addEventListener("change", () => {
+locateLocalForm.addEventListener('change', () => {
   const formData = getFormData();
-  localStorage.setItem("formData", JSON.stringify(formData));
+  localStorage.setItem('formData', JSON.stringify(formData));
 });
 
 // Add an eevnt listener to the page/window to save input data when user loads the page
 
-window.addEventListener("load", () => {
-  const data = JSON.parse(localStorage.getItem("formData"));
+window.addEventListener('load', () => {
+  const data = JSON.parse(localStorage.getItem('formData'));
   if (data) {
     userName.value = data.userName;
     emailID.value = data.emailID;
