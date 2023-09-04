@@ -24,40 +24,76 @@ const projectsArray = [
     mobileName: 'Tonic',
     desktopName: 'Tonic',
     devDetails: ['CANOPY', 'Back End Dev', 2015],
-    description: ['A daily  selection of privately personalized reads; no accounts or sign-ups required.', 'A daily  selection of privately personalized reads; no accounts or sign-ups required.'],
+    description: [
+      'A daily  selection of privately personalized reads; no accounts or sign-ups required.',
+      'A daily  selection of privately personalized reads; no accounts or sign-ups required.',
+    ],
     technologies: ['HTML', 'Ruby on Rails', 'CSS', 'JavaScript'],
-    mobileImage: './images/mobileImg1.jpg',
-    desktopImage: './images/deskImg1.png',
+    mobileImage: ['./images/mobileImg1.jpg', './images/Screenshot-1.png'],
+    desktopImage: ['./images/deskImg1.png', './images/desk1.png'],
+    seeLive: ['https://github.com/efmomoh/Capstone-Project-HTML-CSS-JS/'],
+    seeSource: ['https://efmomoh.github.io/Capstone-Project-HTML-CSS-JS'],
   },
   {
     id: 1,
     mobileName: 'Multi-Post Stories',
     desktopName: 'Multi-Post Stories',
     devDetails: ['FACEBOOK', 'Full Stack Dev', 2015],
-    description: ['A daily  selection of privately personalized reads; no accounts or sign-ups required.', 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.'],
+    description: [
+      'A daily  selection of privately personalized reads; no accounts or sign-ups required.',
+      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    ],
     technologies: ['HTML', 'Ruby on Rails', 'CSS', 'JavaScript'],
-    mobileImage: './images/mobileImg2.jpg',
-    desktopImage: './images/deskImg2.png',
+    mobileImage: ['./images/mobileImg2.jpg', './images/todolist.png'],
+    desktopImage: ['./images/deskImg2.png', './images/deskScreen-2.png'],
+    seeLive: ['https://efmomoh.github.io/Capstone-Project-HTML-CSS-JS/'],
+    seeSource: ['https://efmomoh.github.io/Capstone-Project-HTML-CSS-JS'],
   },
   {
     id: 2,
     mobileName: 'Tonic',
     desktopName: 'FACEBOOK 360',
     devDetails: ['FACEBOOK', 'Full Stack Dev', 2015],
-    description: ['A daily  selection of privately personalized reads; no accounts or sign-ups required.', 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.'],
+    description: [
+      'A daily  selection of privately personalized reads; no accounts or sign-ups required.',
+      'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+    ],
     technologies: ['HTML', 'Ruby on Rails', 'CSS', 'JavaScript'],
-    mobileImage: './images/mobileImg3.jpg',
-    desktopImage: './images/deskImg3.png',
+    mobileImage: ['./images/mobileImg3.jpg', './images/books.png'],
+    desktopImage: ['./images/deskImg3.png', './images/deskScreen-3.png'],
+    seeLive: ['https://github.com/efmomoh/TO-DO-LIST/dist'],
+    seeSource: ['https://efmomoh.github.io/TO-DO-LIST'],
   },
   {
     id: 3,
     mobileName: 'Multi-Post Stories',
     desktopName: 'Uber Navigation',
     devDetails: ['Uber', 'Lead Developer', 2018],
-    description: ['A daily  selection of privately personalized reads; no accounts or sign-ups required.', 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.'],
+    description: [
+      'A daily  selection of privately personalized reads; no accounts or sign-ups required.',
+      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    ],
     technologies: ['HTML', 'Ruby on Rails', 'CSS', 'JavaScript'],
-    mobileImage: './images/mobileImg4.jpg',
-    desktopImage: './images/deskImg4.jpg',
+    mobileImage: ['./images/mobileImg4.jpg', './images/Screenshot (65).png'],
+    desktopImage: ['./images/deskImg4.jpg', './images/desk2.png'],
+    seeLive: ['https://github.com/efmomoh/my-books/'],
+    seeSource: ['https://github.com/efmomoh/my-books'],
+  },
+  {
+    id: 4,
+    mobileName: 'Microverse',
+    desktopName: 'Microverse',
+    devDetails: ['FACEBOOK', 'Full Stack Dev', 2023],
+    description: [
+      'A daily  selection of privately personalized reads; no accounts or sign-ups required.',
+      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    ],
+    technologies: ['HTML', 'Ruby on Rails', 'CSS', 'JavaScript'],
+    mobileImage: ['./images/mobileImg2.jpg', './images/todolist.png'],
+    desktopImage: ['./images/deskImg2.png', './images/deskScreen-4.png'],
+    seeLive:
+      ['https://efmomoh.github.io/Capstone-Project-HTML-CSS-JS/about.html'],
+    seeSource: ['https://efmomoh.github.io/Capstone-Project-HTML-CSS-JS'],
   },
 ];
 
@@ -65,8 +101,8 @@ projectsArray.forEach((card) => {
   html += `
   <div class="work">
   <div class="img-card">
-      <img src="${card.mobileImage}" alt="" class="mobile">
-      <img src="${card.desktopImage}" alt="" class="desktop">
+      <img src="${card.mobileImage[0]}" alt="" class="mobile">
+      <img src="${card.desktopImage[0]}" alt="" class="desktop">
   </div>
   <div class="card-contents">
       <h2 class="card-title mobile">${card.mobileName}</h2>
@@ -114,6 +150,9 @@ for (let i = 0; i < workBtn.length; i += 1) {
     const mobilepopupImg = popupContainer.querySelector('.mobilePopupImg');
     const desktoppopupImg = popupContainer.querySelector('.desktopPopupImg');
 
+    const seeLiveLink = popupContainer.querySelector('.seeLive');
+    const seeSourceLink = popupContainer.querySelector('.seeSource');
+
     mobilePopuoModalTitle.textContent = projectsArray[i].mobileName;
     desktopPopupModalTitle.textContent = projectsArray[i].desktopName;
 
@@ -129,8 +168,11 @@ for (let i = 0; i < workBtn.length; i += 1) {
     backEndDevA.textContent = backEndDevB;
     yearA.textContent = yearB;
 
-    mobilepopupImg.setAttribute('src', projectsArray[i].mobileImage);
-    desktoppopupImg.setAttribute('src', projectsArray[i].desktopImage);
+    mobilepopupImg.setAttribute('src', projectsArray[i].mobileImage[1]);
+    desktoppopupImg.setAttribute('src', projectsArray[i].desktopImage[1]);
+
+    seeLiveLink.setAttribute('src', projectsArray[i].seeLive[0]);
+    seeSourceLink.setAttribute('src', projectsArray[i].seeSource[0]);
 
     popupContainer.classList.remove('show-none');
   });
